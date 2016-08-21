@@ -1,0 +1,55 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Offcanvase Menu -->
+                {{> off-canvas-nested}}
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Page content -->
+                <!-- Shows Off-screen menu hamburger and top-bar on small screens -->
+                <div id="top-bar" class="top-bar show-for-small-only">
+                    <button type="button" class="menu-icon dark" data-toggle="offCanvas"></button>
+                </div>
+                {{!-- topbar --}}
+                <div class="top-bar show-for-medium">
+                    <div class="top-bar-left">
+                        {{> topbar-menu}}
+                    </div>
+                </div>
+                {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+                {{> body}}
+
+                {{> footer}}
+
+            </div>
+        </div>
+    </div>
+    <script src="{{root}}assets/js/app.js"></script>
+
+<!-- This quick fix for adding js on a per page basis would require taking js/page/* out of the js processing in the gulp file -->
+<!-- {{#ifpage page }}
+  <script src="{{root}}assets/js/{{page}}/page.js"></script>
+{{/ifpage}} -->
+
+</body>
+
+</html>

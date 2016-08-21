@@ -1,0 +1,88 @@
+
+
+<div class="row">
+	<div class="columns small-12">
+
+{{#markdown}}
+
+# Panini - Single Page Includes
+
+The most dissapointing thing about Panini as it is employed in the Zurb Template (versus say... Twig or Jade) is the difficulty of including scripts on a per-page basis.  Out of the box the Zurb Template offers the ability to bundle all the js into one ```app.js``` file.  Great - you have a single call to the server for all your scripting needs but how to you specify what page a script is called on if everything downloads as one file to every page?
+
+
+
+
+## Short term solution
+
+For the purposes of prototyping you have two choices: 
+
+1. Ignore the issue, let all scripts run on everypage.
+2. Write your script into the body of the page.  It won't load as it should, in the head or just above the close of the body but it will run on a page specific basis.
+
+
+
+
+## Longer term Solution
+
+For a more permanent solution there is [this work-around](http://stackoverflow.com/questions/35959308/how-to-add-javascript-just-for-one-specific-page) from Stack Overflow.
+
+
+Move all scripts you want to use on specific pages only to ```src/assets/js/specific-page```
+
+Open up ```src/layouts/default.html```
+
+Find the line: ```<script src="\{{root}}assets/js/app.js"></script>```
+
+After that line, insert the following code:
+
+```html
+\{{#ifpage 'news'}}
+  <script src="{{root}}assets/js/specific-page/draw.js"></script>
+  <script src="{{root}}assets/js/specific-page/charts.js"></script>
+\{{/ifpage}}
+```
+
+This will only include those scripts on the page named news.
+
+The scripts also need to be excluded in ```config.yml``` so that they aren't included in ```app.js```. Add ```"!src/assets/js/specific-page/**/*"``` to the javascript paths towards the bottom:
+
+```
+# Paths to your own project code are here
+    - "src/assets/js/!(app).js"
+    - "!src/assets/js/specific-page/**/*"
+    - "src/assets/js/app.js"
+```
+
+Change the javascript task in ```gulpfile.babel.js``` to this:
+
+```javascript
+function javascript() {
+  // Insert this section before the return statement
+  gulp.src('src/assets/js/specific-page/**/*.js')      
+  .pipe($.if(PRODUCTION, $.uglify()
+    .on('error', e => { console.log(e); })
+  ))
+  .pipe(gulp.dest(PATHS.dist + '/assets/js/specific-page'));
+
+  return gulp.src(PATHS.javascript)
+    .pipe($.sourcemaps.init())
+    .pipe($.babel())
+    .pipe($.concat('app.js'))
+    .pipe($.if(PRODUCTION, $.uglify()
+      .on('error', e => { console.log(e); })
+    ))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+```
+
+This change to gulp processing copies (and uglifies, if your in production) the js files found in ```src/assets/js/specific-page/**/*.js``` to ```/assets/js/specific-page``` in your build folder so they can be found when the ```if``` statement in your default template calls for them...
+
+
+
+
+
+{{/markdown}}
+		
+	</div>
+</div>

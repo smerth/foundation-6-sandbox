@@ -1,0 +1,33 @@
+footer {
+    a,
+    p {
+        font-size: 0.8em;
+    }
+    .footer-menu-bar {
+        color: white;
+        background-color: red;
+        a,
+        p {
+            color: white;
+        }
+    }
+    .menu-panel {
+        background-color: map-get($foundation-palette, secondary);
+        padding: 1em;
+        padding-bottom: 2em;
+        a,
+        p {
+            color: white;
+        }
+    }
+    .last-word {
+        background-color: black;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+        a,
+        p {
+            color: white;
+            font-style: italic;
+        }
+    }
+}

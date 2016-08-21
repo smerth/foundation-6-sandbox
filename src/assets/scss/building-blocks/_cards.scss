@@ -1,0 +1,518 @@
+// This product card style come from: http://zurb.com/building-blocks/product-card
+// I am sure they are not touch freindly...
+.card-example-1 {
+    $primary-color: #008cba;
+    .card {
+        padding: 20px;
+        border: 1px solid #efefef;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        &:hover {
+            .img-wrapper {
+                img {
+                    -webkit-filter: grayscale(0);
+                }
+                .add-to-cart {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .img-wrapper {
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        .add-to-cart {
+            width: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            background-color: $primary-color;
+            padding: 16px 8px;
+            bottom: -50px;
+            position: absolute;
+            z-index: 2;
+            color: #fff;
+            margin: 0 auto;
+            border: none;
+            box-shadow: none;
+            &:hover {
+                background-color: green;
+            }
+        }
+        img {
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            -webkit-filter: grayscale(1);
+            width: 100%;
+        }
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h5 {
+        font-weight: bold;
+    }
+    p {
+        color: #888;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+}
+
+// This material card style come from: http://zurb.com/building-blocks/product-card
+// I am sure they are not touch freindly...
+.card-example-2 {
+    .card {
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #272727;
+        border-radius: 2px;
+        .title {
+            line-height: 3rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .content {
+            padding: 1.3rem;
+            font-weight: 300;
+            border-radius: 0 0 2px 2px;
+        }
+        p {
+            margin: 0;
+        }
+        .action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 1.3rem;
+        }
+        a {
+            color: #ffab40;
+            margin-right: 1.3rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .image {
+            position: relative;
+            .title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1.3rem;
+                color: #fff;
+            }
+            img {
+                border-radius: 2px 2px 0 0;
+            }
+        }
+    }
+}
+
+// Chinese cards - this is just quick styles...
+.card-example-3 {
+    .card {
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #272727;
+        border-radius: 2px;
+        margin-bottom: 1em;
+        .definition {
+            padding: 1.3rem;
+            font-weight: 300;
+            border-radius: 0 0 2px 2px;
+        }
+        p {
+            margin: 0;
+        }
+        .action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 1.3rem;
+        }
+        a {
+            color: #ffab40;
+            margin-right: 1.3rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .character {
+            display: flex;
+            position: relative;
+            background: red;
+            color: white;
+            height: 250px;
+        }
+        .cc-1 {
+            font-size: 140px;
+        }
+        .cc-2 {
+            font-size: 120px;
+        }
+        .cc-3 {
+            font-size: 80px;
+        }
+        .cc-4 {
+            font-size: 60px;
+        }
+        .pronunciation {
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            font-size: .2em;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
+}
+
+// Toggler Demo with Material Cards
+.card-example-4 {
+    .card {
+        #toggle-id-1 {
+            display: none; // Important if you want to hide the element on initial open
+        }
+        position: relative;
+        font-family: 'Roboto',
+        sans-serif;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #272727;
+        border-radius: 2px;
+        .close-button {
+            position: absolute;
+            color: #8a8a8a;
+            right: 1rem;
+            top: 0.5rem;
+            font-size: 2em;
+            line-height: 1;
+            cursor: pointer;
+        }
+        .title {
+            line-height: 3rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .content {
+            padding: 1.3rem;
+            font-weight: 300;
+            border-radius: 0 0 2px 2px;
+        }
+        p {
+            margin: 0;
+        }
+        .action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 1.3rem;
+        }
+        a {
+            color: #ffab40;
+            margin-right: 1.3rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .image {
+            position: relative;
+            .title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1.3rem;
+                color: #fff;
+            }
+            img {
+                border-radius: 2px 2px 0 0;
+            }
+        }
+    }
+}
+
+// Toggler Demo with Chinese Cards
+.card-example-5 {
+    .card {
+        position: relative;
+        .close-button {
+            color: #FD8C78;
+            font-size: 3em;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            z-index: 10;
+        }
+        $closebutton-position: top left;
+        font-family: 'Roboto',
+        sans-serif;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #272727;
+        border-radius: 2px;
+        margin-bottom: 1em;
+        .definition {
+            padding: 1.3rem;
+            font-weight: 300;
+            border-radius: 0 0 2px 2px;
+        }
+        p {
+            margin: 0;
+        }
+        .action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 1.3rem;
+        }
+        a {
+            color: #ffab40;
+            margin-right: 1.3rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .character {
+            display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+            position: relative;
+            background: red;
+            color: white;
+            height: 250px;
+        }
+        .cc-1 {
+            font-size: 140px;
+        }
+        .cc-2 {
+            font-size: 120px;
+        }
+        .cc-3 {
+            font-size: 80px;
+        }
+        .cc-4 {
+            font-size: 60px;
+        }
+        .pronunciation {
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            font-size: .2em;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+// This card is used on the panini-hsk-level-1 page. 
+// A user can test herself to see which words she already knows in the current list
+.card-level-test {
+    .card {
+        position: relative;
+        .close-button {
+            color: #FD8C78;
+            font-size: 3em;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            z-index: 10;
+        }
+        $closebutton-position: top left;
+        font-family: 'Roboto', sans-serif;
+        // font-family: 'georgia', serif;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #272727;
+        border-radius: 2px;
+        margin-bottom: 1em;
+        .definition {
+            padding: 1.3rem;
+            font-weight: 300;
+            border-radius: 0 0 2px 2px;
+        }
+        p {
+            margin: 0;
+        }
+        .action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 1.3rem;
+        }
+        a {
+            color: #ffab40;
+            margin-right: 1.3rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .character {
+            display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+            position: relative;
+            background: #FC0D1B;
+            color: white;
+            height: 250px;
+        }
+
+        .cc-1 { font-size: 140px; }
+        .cc-2 { font-size: 120px; }
+        .cc-3 { font-size: 80px; }
+        .cc-4 { font-size: 60px; }
+
+        @include breakpoint(medium) { 
+            .cc-2 { font-size: 100px; }
+            .cc-3 { font-size: 75px; }
+        }
+
+        .pronunciation {
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            font-size: .2em;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+// jQuery Flip Simple
+// First expamle using grid
+.jquery-flip-grid {
+    .columns {
+        border: 1px solid grey;
+        margin-bottom: 1em;
+    }
+    .jquery-flip-card-1 {
+        height: 250px;
+    }
+    .front {
+        display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+        background-color: red;
+        color: white;  
+    }
+    .back {
+        display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+        padding: 1em;
+        background-color: black;
+        color: white; 
+    }
+    .back,
+    .front {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .cc-1 {
+        font-size: 100px;
+    }
+    .cc-2 {
+        font-size: 80px;
+    }
+    .cc-3 {
+        font-size: 60px;
+    }
+    .cc-4 {
+        font-size: 45px;
+    }
+    .pronunciation {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        font-size: 1.5em;
+    }
+}
+
+// jQuery Flip Simple
+// First expamle using block grid
+.jquery-flip-block-grid {
+    .column {
+        border: 1px solid red;
+        margin-bottom: 1em;
+    }
+    .jquery-flip-card-2 {
+        height: 250px;
+    }
+    .front {
+        background-color: grey;
+        color: white;
+        display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+    }
+    .back {
+        padding: 1em;
+        background-color: black;
+        color: white;
+        display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+    }
+    .back,
+    .front {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .cc-1 {
+        font-size: 100px;
+    }
+    .cc-2 {
+        font-size: 80px;
+    }
+    .cc-3 {
+        font-size: 60px;
+    }
+    .cc-4 {
+        font-size: 45px;
+    }
+    .pronunciation {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        font-size: 1.5em;
+    }
+}
+
+.jquery-flip-chinese-cards {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    .column {
+        height: 450px; // Not declaring height on a card collapses the grid with cards piling up!
+    }
+    .card-inner {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .card-top {
+        display: flex; // Centers text vertically and horizontally, may need to include a mixin...
+        height: 200px;
+        //         // @include flex-align($y: middle);
+        //         // @include flex-align-self($y: middle);
+    }
+    .front .card-top {
+        background-color: red;
+    }
+    .back .card-top {
+        background-color: black;
+    }
+    .pronunciation {
+        // position: absolute;
+        bottom: 0;
+        right: 5px;
+        // padding: 1.3rem;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    .cc-1 {
+        font-size: 100px;
+    }
+    .cc-2 {
+        font-size: 80px;
+    }
+    .cc-3 {
+        font-size: 60px;
+    }
+    .cc-4 {
+        font-size: 45px;
+    }
+}
+
+
+// Flippant Basic
+.flippant-example {
+    .front{ 
+// background-color: white;
+    }
+     .back {
+        display: none;
+     }
+}
+
+
+

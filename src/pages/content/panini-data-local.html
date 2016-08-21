@@ -1,0 +1,81 @@
+<div class="row topspace">
+    <div class="columns small-12">
+        <h1>Panini Data: Local Files</h1>
+
+<div class="callout primary columns small-12">
+<h5>A local json or yaml file can be parsed by Panini into variables which can be used in templates.</h5>
+</div>
+    </div>
+</div>
+
+
+
+<div class="row">
+	<div class="columns small-12 medium-8">
+
+{{#markdown }}
+
+### Data
+
+The datafile is placed in the data folder (in this case ```hsk-data.json```) It has the following structure.
+
+```json
+{
+    "hsk-all-words": [
+        {
+            "word": {
+                "title": "\u505a\u4e3b",
+                "field_definition": "make the decision; take charge of; back up; support; be host",
+                "field_word_pronunciation": "zuo4 zhu3"
+            }
+        },
+        {
+            "word": {
+                "title": "\u5ea7\u53f3\u94ed",
+                "field_definition": "motto; maxim",
+                "field_word_pronunciation": "zuo4 you4 ming2"
+            }
+        }
+    ]
+}
+```
+
+
+
+
+### Template
+
+The data is accessed through variables made available by Panini auto-magically.  To drilldown into the data you use dot notation.  ```filename.array``` gets you into the data set. ```this.word.title``` gets you to the data-item you need.
+
+
+```html
+<ol>
+\{{#each hsk-data.hsk-all-words}}
+  <li>\{{ this.word.title }}</li>
+\{{/each}}
+</ol>
+```
+
+{{/markdown }}
+</div>
+
+<div class="columns small-12 medium-4">
+<div class="callout warning">
+
+<h2>Here are some words</h2>
+
+<dl id="hsk-definition-list-example-1">
+{{#each hsk-level-1.word-list}}
+<div class="hsk-item">
+  <dt lang="zh-Hans"><span class="hsk-word">{{ this.word.title }}</span> <span class="hsk-pronounciation">({{ this.word.pron }})</span></dt>
+  <dd>{{ this.word.def}}</dd>
+  </div>
+{{/each}}
+</dl>
+
+</div>
+</div>
+
+
+	
+</div>

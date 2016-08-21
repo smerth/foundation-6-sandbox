@@ -1,0 +1,1228 @@
+{
+    "word-list": [
+        {
+            "word": {
+                "field_level_order": "0001",
+                "title": "\u7231",
+                "field_definition": "to love; affection; to be fond of; to like",
+                "field_word_pronunciation": "ai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0002",
+                "title": "\u516b",
+                "field_definition": "eight; 8",
+                "field_word_pronunciation": "ba1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0003",
+                "title": "\u7238\u7238",
+                "field_definition": "(informal) father; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "ba4 ba5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0004",
+                "title": "\u676f\u5b50",
+                "field_definition": "cup; glass; CL:\u500b|\u4e2a[ge4],\u652f[zhi1],\u679d[zhi1]",
+                "field_word_pronunciation": "bei1 zi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0005",
+                "title": "\u5317\u4eac",
+                "field_definition": "Beijing, capital of People's Republic of China; Peking; PRC government",
+                "field_word_pronunciation": "Bei3 jing1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0006",
+                "title": "\u672c",
+                "field_definition": "roots or stems of plants; origin; source; this; the current; root; foundation; basis; classifier for books, periodicals, files etc; originally",
+                "field_word_pronunciation": "ben3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0007",
+                "title": "\u4e0d\u5ba2\u6c14",
+                "field_definition": "you're welcome; impolite; rude; blunt; don't mention it",
+                "field_word_pronunciation": "bu2 ke4 qi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0008",
+                "title": "\u4e0d",
+                "field_definition": "(negative prefix); not; no",
+                "field_word_pronunciation": "bu4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0009",
+                "title": "\u83dc",
+                "field_definition": "dish (type of food); vegetables; vegetable; cuisine; CL:\u76e4|\u76d8[pan2],\u9053[dao4]",
+                "field_word_pronunciation": "cai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0010",
+                "title": "\u8336",
+                "field_definition": "tea; tea plant; CL:\u676f[bei1],\u58fa|\u58f6[hu2]",
+                "field_word_pronunciation": "cha2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0011",
+                "title": "\u5403",
+                "field_definition": "to eat; to have one's meal; to eradicate; to destroy; to absorb; to suffer; to exhaust",
+                "field_word_pronunciation": "chi1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0012",
+                "title": "\u51fa\u79df\u8f66",
+                "field_definition": "taxi",
+                "field_word_pronunciation": "chu1 zu1 che1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0013",
+                "title": "\u6253\u7535\u8bdd",
+                "field_definition": "to make a telephone call",
+                "field_word_pronunciation": "da3 dian4 hua4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0014",
+                "title": "\u5927",
+                "field_definition": "big; huge; large; major; great; wide; deep; oldest; eldest",
+                "field_word_pronunciation": "da4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0015",
+                "title": "\u7684",
+                "field_definition": "of; structural particle: used before a noun, linking it to preceding possessive or descriptive attributive",
+                "field_word_pronunciation": "de5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0016",
+                "title": "\u70b9",
+                "field_definition": "drop (of liquid); stain; spot; speck; jot; dot stroke (in Chinese characters); decimal point; point; mark (of degree or level); a place (with certain characteristics); iron bell; o\u2019clock; a little; a bit; some; (point) unit of measurement for type; to touch on briefly; to make clear; to light; to ignite; to kindle; period of time at night (24 minutes) (old); a drip; to dibble; classifier for small indeterminate quantities",
+                "field_word_pronunciation": "dian3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0017",
+                "title": "\u7535\u8111",
+                "field_definition": "computer; CL:\u81fa|\u53f0[tai2]",
+                "field_word_pronunciation": "dian4 nao3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0018",
+                "title": "\u7535\u89c6",
+                "field_definition": "television; TV; CL:\u81fa|\u53f0[tai2],\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "dian4 shi4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0019",
+                "title": "\u7535\u5f71",
+                "field_definition": "movie; film; CL:\u90e8[bu4],\u7247[pian4],\u5e55[mu4],\u5834|\u573a[chang3]",
+                "field_word_pronunciation": "dian4 ying3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0020",
+                "title": "\u4e1c\u897f",
+                "field_definition": "thing; stuff; person; CL:\u500b|\u4e2a[ge4],\u4ef6[jian4]",
+                "field_word_pronunciation": "dong1 xi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0021",
+                "title": "\u90fd",
+                "field_definition": "all, both; entirely (due to) each; even; already",
+                "field_word_pronunciation": "dou1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0022",
+                "title": "\u8bfb",
+                "field_definition": "to read; to study; reading of word (i.e. pronunciation), similar to \u62fc\u97f3[pin1 yin1]",
+                "field_word_pronunciation": "du2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0023",
+                "title": "\u5bf9\u4e0d\u8d77",
+                "field_definition": "unworthy; to let down; I'm sorry; excuse me; pardon me; if you please; sorry? (please repeat)",
+                "field_word_pronunciation": "dui4 bu5 qi3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0024",
+                "title": "\u591a",
+                "field_definition": "many; much; a lot of; numerous; multi-",
+                "field_word_pronunciation": "duo1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0025",
+                "title": "\u591a\u5c11",
+                "field_definition": "number; amount; somewhat",
+                "field_word_pronunciation": "duo1 shao3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0026",
+                "title": "\u513f\u5b50",
+                "field_definition": "son",
+                "field_word_pronunciation": "er2 zi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0027",
+                "title": "\u4e8c",
+                "field_definition": "two; 2; stupid (Beijing dialect)",
+                "field_word_pronunciation": "er4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0028",
+                "title": "\u996d\u9986",
+                "field_definition": "restaurant; CL:\u5bb6[jia1]",
+                "field_word_pronunciation": "fan4 guan3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0029",
+                "title": "\u98de\u673a",
+                "field_definition": "airplane; CL: \u67b6[jia4]",
+                "field_word_pronunciation": "fei1 ji1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0030",
+                "title": "\u5206\u949f",
+                "field_definition": "minute",
+                "field_word_pronunciation": "fen1 zhong1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0031",
+                "title": "\u9ad8\u5174",
+                "field_definition": "happy; glad; willing (to do sth); in a cheerful mood",
+                "field_word_pronunciation": "gao1 xing4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0032",
+                "title": "\u4e2a",
+                "field_definition": "individual; this; that; size; classifier for people or objects in general",
+                "field_word_pronunciation": "ge4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0033",
+                "title": "\u5de5\u4f5c",
+                "field_definition": "public park; CL:\u5834|\u573a[chang3]",
+                "field_word_pronunciation": "gong1 zuo4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0034",
+                "title": "\u72d7",
+                "field_definition": "dog; CL:\u96bb|\u53ea[zhi1],\u689d|\u6761[tiao2]",
+                "field_word_pronunciation": "gou3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0035",
+                "title": "\u6c49\u8bed",
+                "field_definition": "Chinese language; CL:\u9580|\u95e8[men2]",
+                "field_word_pronunciation": "Han4 yu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0036",
+                "title": "\u597d",
+                "field_definition": "good; well; proper; good to; easy to; very; so; (suffix indicating completion or readiness)",
+                "field_word_pronunciation": "hao3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0037",
+                "title": "\u559d",
+                "field_definition": "to drink; to shout (a command); My goodness!",
+                "field_word_pronunciation": "he1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0038",
+                "title": "\u548c",
+                "field_definition": "and; together with; with; sum; union; peace; harmony; surname He; Japanese related; Taiwan pr.  han4",
+                "field_word_pronunciation": "he2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0039",
+                "title": "\u5f88",
+                "field_definition": "(adverb of degree); quite; very; awfully",
+                "field_word_pronunciation": "hen3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0040",
+                "title": "\u540e\u9762",
+                "field_definition": "rear; back; behind; later; afterwards",
+                "field_word_pronunciation": "hou4 mian5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0041",
+                "title": "\u56de",
+                "field_definition": "to circle; to go back; to turn around; to answer; to return; to revolve; Hui ethnic group (Chinese Muslims); time; classifier for acts of a play; section or chapter (of a classic book)",
+                "field_word_pronunciation": "hui2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0042",
+                "title": "\u4f1a",
+                "field_definition": "can; be possible; be able to; will; be likely to; be sure to; to assemble; to meet; to gather; to see; union; group; association; CL:\u500b|\u4e2a[ge4]; a moment (Taiwan pr. for this sense is hui3)",
+                "field_word_pronunciation": "hui4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0043",
+                "title": "\u706b\u8f66\u7ad9",
+                "field_definition": "train station",
+                "field_word_pronunciation": "huo3 che1 zhan4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0044",
+                "title": "\u51e0",
+                "field_definition": "how much; how many; several; a few",
+                "field_word_pronunciation": "ji3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0045",
+                "title": "\u5bb6",
+                "field_definition": "home; family; classifier for families or businesses; refers to the philosophical schools of pre-Han China; noun suffix for specialists in some activity such as musician or revolutionary, corresponds to English -ist, -er, -ary or -ian; surname Jia; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "jia1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0046",
+                "title": "\u53eb",
+                "field_definition": "to shout; to call; to order; to ask; to be called; by (indicates agent in the passive mood)",
+                "field_word_pronunciation": "jiao4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0047",
+                "title": "\u4eca\u5929",
+                "field_definition": "today; at the present; now",
+                "field_word_pronunciation": "jin1 tian1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0048",
+                "title": "\u4e5d",
+                "field_definition": "nine; 9",
+                "field_word_pronunciation": "jiu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0049",
+                "title": "\u5f00",
+                "field_definition": "to open; to start; to turn on; to boil; to write out (a medical prescription); to operate (vehicle); abbr. for \u958b\u723e\u6587|\u5f00\u5c14\u6587 degrees Kelvin",
+                "field_word_pronunciation": "kai1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0050",
+                "title": "\u770b",
+                "field_definition": "to see; to look at; to read; to watch; to consider; to regard as; to view as; to treat as; to judge; (after repeated verb) to give it a try; depending on (how you're judging); to visit; to call on; to treat (an illness); to look after; Watch out! (for a danger)",
+                "field_word_pronunciation": "kan4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0051",
+                "title": "\u770b\u89c1",
+                "field_definition": "to see; to catch sight of",
+                "field_word_pronunciation": "kan4 jian4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0052",
+                "title": "\u5757",
+                "field_definition": "lump (of earth); chunk; piece; classifier for pieces of cloth, cake, soap etc; colloquial word for yuan (or other unit of currency such as Hong Kong or US dollar etc), usually as \u584a\u9322|\u5757\u94b1",
+                "field_word_pronunciation": "kuai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0053",
+                "title": "\u6765",
+                "field_definition": "to come; to arrive; to come round; ever since; next",
+                "field_word_pronunciation": "lai2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0054",
+                "title": "\u8001\u5e08",
+                "field_definition": "teacher; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "lao3 shi1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0055",
+                "title": "\u4e86",
+                "field_definition": "(modal particle intensifying preceding clause); (completed action marker)",
+                "field_word_pronunciation": "le5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0056",
+                "title": "\u51b7",
+                "field_definition": "cold",
+                "field_word_pronunciation": "leng3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0057",
+                "title": "\u91cc",
+                "field_definition": "lining; interior; inside; internal; also written \u88e1|\u91cc [li3]",
+                "field_word_pronunciation": "li3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0058",
+                "title": "\u96f6",
+                "field_definition": "zero; nought; zero sign; fractional; fragmentary; odd (of numbers); (placed between two numbers to indicate a smaller quantity followed by a larger one); fraction; (in mathematics) remainder (after division); extra; to wither and fall; to wither",
+                "field_word_pronunciation": "ling2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0059",
+                "title": "\u516d",
+                "field_definition": "six; 6",
+                "field_word_pronunciation": "liu4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0060",
+                "title": "\u5988\u5988",
+                "field_definition": "mama; mommy; mother; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "ma1 ma5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0061",
+                "title": "\u5417",
+                "field_definition": "(question tag)",
+                "field_word_pronunciation": "ma5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0062",
+                "title": "\u4e70",
+                "field_definition": "to buy; to purchase",
+                "field_word_pronunciation": "mai3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0063",
+                "title": "\u732b",
+                "field_definition": "cat; CL:\u96bb|\u53ea[zhi1]",
+                "field_word_pronunciation": "mao1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0064",
+                "title": "\u6ca1",
+                "field_definition": "(negative prefix for verbs); have not; not",
+                "field_word_pronunciation": "mei2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0065",
+                "title": "\u6ca1\u5173\u7cfb",
+                "field_definition": "it doesn't matter",
+                "field_word_pronunciation": "mei2 guan1 xi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0066",
+                "title": "\u7c73\u996d",
+                "field_definition": "(cooked) rice",
+                "field_word_pronunciation": "mi3 fan4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0067",
+                "title": "\u660e\u5929",
+                "field_definition": "tomorrow",
+                "field_word_pronunciation": "ming2 tian1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0068",
+                "title": "\u540d\u5b57",
+                "field_definition": "name (of a person or thing); CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "ming2 zi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0069",
+                "title": "\u54ea",
+                "field_definition": "how; which",
+                "field_word_pronunciation": "na3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0069",
+                "title": "\u54ea\u513f",
+                "field_definition": "where?; wherever; anywhere",
+                "field_word_pronunciation": "na3 r5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0070",
+                "title": "\u90a3",
+                "field_definition": "that; those; then (in that case); commonly pr. nei4 before a classifier, esp. in Beijing",
+                "field_word_pronunciation": "na4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0070",
+                "title": "\u90a3\u513f",
+                "field_definition": "there",
+                "field_word_pronunciation": "na4 r5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0071",
+                "title": "\u5462",
+                "field_definition": "(question particle for subjects already mentioned)",
+                "field_word_pronunciation": "ne5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0072",
+                "title": "\u80fd",
+                "field_definition": "to be able to; to be capable of; ability; capability; able; capable; can possibly; (usually used in the negative) to have the possibility of",
+                "field_word_pronunciation": "neng2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0073",
+                "title": "\u4f60",
+                "field_definition": "you (informal, as opposed to polite \u60a8[nin2])",
+                "field_word_pronunciation": "ni3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0074",
+                "title": "\u5e74",
+                "field_definition": "year; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "nian2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0075",
+                "title": "\u5973\u513f",
+                "field_definition": "daughter",
+                "field_word_pronunciation": "nv3 er2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0076",
+                "title": "\u670b\u53cb",
+                "field_definition": "friend; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "peng2 you5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0077",
+                "title": "\u6f02\u4eae",
+                "field_definition": "pretty; beautiful",
+                "field_word_pronunciation": "piao4 liang5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0078",
+                "title": "\u82f9\u679c",
+                "field_definition": "apple; CL:\u500b|\u4e2a[ge4],\u9846|\u9897[ke1]",
+                "field_word_pronunciation": "ping2 guo3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0079",
+                "title": "\u4e03",
+                "field_definition": "seven; 7",
+                "field_word_pronunciation": "qi1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0080",
+                "title": "\u94b1",
+                "field_definition": "coin; money; CL:\u7b46|\u7b14[bi3]",
+                "field_word_pronunciation": "qian2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0081",
+                "title": "\u524d\u9762",
+                "field_definition": "ahead; in front; preceding; above",
+                "field_word_pronunciation": "qian2 mian4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0082",
+                "title": "\u8bf7",
+                "field_definition": "to ask; to invite; please (do sth); to treat (to a meal etc); to request",
+                "field_word_pronunciation": "qing3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0083",
+                "title": "\u53bb",
+                "field_definition": "to go; to go to (a place); to cause to go or send (sb); to remove; to get rid of; (when used either before or after a verb) to go in order to do sth; to be apart from in space or time; (after a verb of motion indicates movement away from the speaker); (used after certain verbs to indicate detachment or separation); (of a time or an event etc) just passed or elapsed",
+                "field_word_pronunciation": "qu4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0084",
+                "title": "\u70ed",
+                "field_definition": "heat; to heat up; fervent; hot (of weather); warm up",
+                "field_word_pronunciation": "re4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0085",
+                "title": "\u4eba",
+                "field_definition": "man; person; people; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "ren2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0086",
+                "title": "\u8ba4\u8bc6",
+                "field_definition": "to know; to recognize; to be familiar with; acquainted with sth; knowledge; understanding; awareness; cognition",
+                "field_word_pronunciation": "ren4 shi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0087",
+                "title": "\u65e5",
+                "field_definition": "sun; day; date, day of the month; abbr. for \u65e5\u672c|\u65e5\u672c Japan",
+                "field_word_pronunciation": "ri4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0088",
+                "title": "\u4e09",
+                "field_definition": "three; 3",
+                "field_word_pronunciation": "san1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0089",
+                "title": "\u5546\u5e97",
+                "field_definition": "store; shop; CL:\u5bb6[jia1],\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "shang1 dian4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0090",
+                "title": "\u4e0a",
+                "field_definition": "on; on top; upon; first (of multiple parts); previous; last; upper; higher; above; to climb; to go into; to go up; to attend (class or university)",
+                "field_word_pronunciation": "shang4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0091",
+                "title": "\u4e0a\u5348",
+                "field_definition": "morning; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "shang4 wu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0092",
+                "title": "\u5c11",
+                "field_definition": "few; little; lack",
+                "field_word_pronunciation": "shao3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0093",
+                "title": "\u8c01",
+                "field_definition": "who; also pronounced shui2",
+                "field_word_pronunciation": "shei2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0094",
+                "title": "\u4ec0\u4e48",
+                "field_definition": "what?; who?; something; anything",
+                "field_word_pronunciation": "shen2 me5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0095",
+                "title": "\u5341",
+                "field_definition": "ten; 10",
+                "field_word_pronunciation": "shi2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0096",
+                "title": "\u65f6\u5019",
+                "field_definition": "time; length of time; moment; period",
+                "field_word_pronunciation": "shi2 hou5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0097",
+                "title": "\u662f",
+                "field_definition": "is; are; am; yes; to be",
+                "field_word_pronunciation": "shi4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0098",
+                "title": "\u4e66",
+                "field_definition": "book; letter; CL:\u672c[ben3],\u518a|\u518c[ce4],\u90e8[bu4]; see also \u66f8\u7d93|\u4e66\u7ecf Book of History",
+                "field_word_pronunciation": "shu1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0099",
+                "title": "\u6c34",
+                "field_definition": "water; river; liquid; beverage; additional charges or income; (of clothes) classifier for number of washes",
+                "field_word_pronunciation": "shui3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0100",
+                "title": "\u6c34\u679c",
+                "field_definition": "fruit; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "shui3 guo3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0101",
+                "title": "\u7761\u89c9",
+                "field_definition": "to go to bed; to go to sleep",
+                "field_word_pronunciation": "shui4 jiao4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0102",
+                "title": "\u8bf4\u8bdd",
+                "field_definition": "to speak; to say; to talk; to gossip; to tell stories; talk; word",
+                "field_word_pronunciation": "shuo1 hua4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0103",
+                "title": "\u56db",
+                "field_definition": "four; 4",
+                "field_word_pronunciation": "si4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0104",
+                "title": "\u5c81",
+                "field_definition": "classifier for years (of age); year; year (of crop harvests)",
+                "field_word_pronunciation": "sui4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0105",
+                "title": "\u4ed6",
+                "field_definition": "he or him; (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object); other; another",
+                "field_word_pronunciation": "ta1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0106",
+                "title": "\u5979",
+                "field_definition": "she",
+                "field_word_pronunciation": "ta1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0107",
+                "title": "\u592a",
+                "field_definition": "highest; greatest; too (much); very; extremely",
+                "field_word_pronunciation": "tai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0108",
+                "title": "\u5929\u6c14",
+                "field_definition": "weather",
+                "field_word_pronunciation": "tian1 qi4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0109",
+                "title": "\u542c",
+                "field_definition": "to listen; to hear; to obey; a can (loanword from English \"tin\"); classifier for canned beverages",
+                "field_word_pronunciation": "ting1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0110",
+                "title": "\u540c\u5b66",
+                "field_definition": "(fellow) classmate; CL:\u4f4d[wei4],\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "tong2 xue2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0111",
+                "title": "\u5582",
+                "field_definition": "hello (interj., esp. on telephone); hey; to feed (sb or some animal)",
+                "field_word_pronunciation": "wei4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0112",
+                "title": "\u6211",
+                "field_definition": "I; me; my",
+                "field_word_pronunciation": "wo3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0113",
+                "title": "\u6211\u4eec",
+                "field_definition": "we; us; ourselves; our",
+                "field_word_pronunciation": "wo3 men5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0114",
+                "title": "\u4e94",
+                "field_definition": "five; 5",
+                "field_word_pronunciation": "wu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0115",
+                "title": "\u559c\u6b22",
+                "field_definition": "to like; to be fond of",
+                "field_word_pronunciation": "xi3 huan5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0116",
+                "title": "\u4e0b",
+                "field_definition": "down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down",
+                "field_word_pronunciation": "xia4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0117",
+                "title": "\u4e0b\u5348",
+                "field_definition": "afternoon; p.m.; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "xia4 wu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0118",
+                "title": "\u4e0b\u96e8",
+                "field_definition": "to rain; rainy",
+                "field_word_pronunciation": "xia4 yu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0119",
+                "title": "\u5148\u751f",
+                "field_definition": "teacher; Mister (Mr.); husband; doctor (topolect); CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "xian1 sheng5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0120",
+                "title": "\u73b0\u5728",
+                "field_definition": "now; at present; at the moment; modern; current; nowadays",
+                "field_word_pronunciation": "xian4 zai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0121",
+                "title": "\u60f3",
+                "field_definition": "to think; to believe; to suppose; to wish; to want; to miss",
+                "field_word_pronunciation": "xiang3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0122",
+                "title": "\u5c0f",
+                "field_definition": "small; tiny; few; young",
+                "field_word_pronunciation": "xiao3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0123",
+                "title": "\u5c0f\u59d0",
+                "field_definition": "young lady; miss; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
+                "field_word_pronunciation": "xiao3 jie5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0124",
+                "title": "\u4e9b",
+                "field_definition": "some; few; several; (a measure word)",
+                "field_word_pronunciation": "xie1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0125",
+                "title": "\u5199",
+                "field_definition": "to write",
+                "field_word_pronunciation": "xie3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0126",
+                "title": "\u8c22\u8c22",
+                "field_definition": "to thank; thanks",
+                "field_word_pronunciation": "xie4 xie5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0127",
+                "title": "\u661f\u671f",
+                "field_definition": "week; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "xing1 qi1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0128",
+                "title": "\u5b66\u751f",
+                "field_definition": "student; school child",
+                "field_word_pronunciation": "xue2 sheng5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0129",
+                "title": "\u5b66\u4e60",
+                "field_definition": "to learn; to study",
+                "field_word_pronunciation": "xue2 xi2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0130",
+                "title": "\u5b66\u6821",
+                "field_definition": "school; CL:\u6240[suo3]",
+                "field_word_pronunciation": "xue2 xiao4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0131",
+                "title": "\u4e00",
+                "field_definition": "one; 1; single; a (article); as soon as; entire; whole; all; throughout; \"one\" radical in Chinese characters (Kangxi radical 1)",
+                "field_word_pronunciation": "yi1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0132",
+                "title": "\u8863\u670d",
+                "field_definition": "clothes; CL:\u4ef6[jian4],\u5957[tao4]",
+                "field_word_pronunciation": "yi1 fu5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0133",
+                "title": "\u533b\u751f",
+                "field_definition": "doctor; CL:\u500b|\u4e2a[ge4],\u4f4d[wei4],\u540d[ming2]",
+                "field_word_pronunciation": "yi1 sheng1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0134",
+                "title": "\u533b\u9662",
+                "field_definition": "hospital; CL:\u6240[suo3],\u5bb6[jia1],\u5ea7[zuo4]",
+                "field_word_pronunciation": "yi1 yuan4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0135",
+                "title": "\u6905\u5b50",
+                "field_definition": "chair; CL:\u628a[ba3],\u5957[tao4]",
+                "field_word_pronunciation": "yi3 zi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0136",
+                "title": "\u6709",
+                "field_definition": "to have; there is; there are; to exist; to be",
+                "field_word_pronunciation": "you3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0137",
+                "title": "\u6708",
+                "field_definition": "moon; month; CL:\u500b|\u4e2a[ge4],\u8f2a|\u8f6e[lun2]",
+                "field_word_pronunciation": "yue4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0138",
+                "title": "\u5728",
+                "field_definition": "(located) at; (to be) in; to exist; in the middle of doing sth; (indicating an action in progress)",
+                "field_word_pronunciation": "zai4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0139",
+                "title": "\u518d\u89c1",
+                "field_definition": "goodbye; see you again later",
+                "field_word_pronunciation": "zai4 jian4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0140",
+                "title": "\u600e\u4e48",
+                "field_definition": "how?; what?; why?",
+                "field_word_pronunciation": "zen3 me5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0141",
+                "title": "\u600e\u4e48\u6837",
+                "field_definition": "how?; how about?; how was it?; how are things?",
+                "field_word_pronunciation": "zen3 me5 yang4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0142",
+                "title": "\u8fd9",
+                "field_definition": "this; these; (commonly pr. zhei4 before a classifier, esp. in Beijing)",
+                "field_word_pronunciation": "zhe4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0142",
+                "title": "\u8fd9\u513f",
+                "field_definition": "here",
+                "field_word_pronunciation": "zhe4 r5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0143",
+                "title": "\u4e2d\u56fd",
+                "field_definition": "China; Middle Kingdom",
+                "field_word_pronunciation": "Zhong1 guo2"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0144",
+                "title": "\u4e2d\u5348",
+                "field_definition": "noon; midday; CL:\u500b|\u4e2a[ge4]",
+                "field_word_pronunciation": "zhong1 wu3"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0145",
+                "title": "\u4f4f",
+                "field_definition": "to live; to dwell; to stay; to reside; to stop",
+                "field_word_pronunciation": "zhu4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0146",
+                "title": "\u684c\u5b50",
+                "field_definition": "table; desk; CL:\u5f35|\u5f20[zhang1],\u5957[tao4]",
+                "field_word_pronunciation": "zhuo1 zi5"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0147",
+                "title": "\u5b57",
+                "field_definition": "letter; symbol; character; word; CL:\u500b|\u4e2a[ge4]; courtesy or style name traditionally given to males aged 20 in dynastic China",
+                "field_word_pronunciation": "zi4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0148",
+                "title": "\u6628\u5929",
+                "field_definition": "yesterday",
+                "field_word_pronunciation": "zuo2 tian1"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0149",
+                "title": "\u505a",
+                "field_definition": "to do; to make; to produce; to write; to compose; to act as; to engage in; to hold (a party); to be; to become; to function (in some capacity); to serve as; to be used for; to form (a bond or relationship); to pretend; to feign; to act a part; to put on appearance",
+                "field_word_pronunciation": "zuo4"
+            }
+        },
+        {
+            "word": {
+                "field_level_order": "0150",
+                "title": "\u5750",
+                "field_definition": "to sit; to take a seat; to take (a bus, airplane etc); to bear fruit; surname Zuo",
+                "field_word_pronunciation": "zuo4"
+            }
+        }
+    ]
+}

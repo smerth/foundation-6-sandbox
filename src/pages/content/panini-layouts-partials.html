@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="columns small-12">
+		<h1>Panini - Layouts & Partials</h1>
+		<h2>Layouts</h2>
+		<p>This page demonstrates the inclution of partials in the form of page content and layout files.</p>
+		<p>Layouts are found in the layout folder.  Panini automatically looks in this folder for any layouts referenced in the page html and feeds the page content into the layout.  There is no need to reference the default layout in the page content since,... wait for it,... it looks for and used the default layout - by default!  However to use a layout other than the default layout, you must reference that layout in the front matter of the page.</p>
+		<h2>Partials</h2>
+		<p>This page demonstrates the inclution of partials in the form of header and footer.</p>
+		<p>These partials are found in the partials folder.  Panini automatically looks in this folder for any partials referenced in the page html and feeds in the content of that partial.</p>
+		<h1>Partials Folder Organisation</h1>
+		<p>Working with alot of partials will lead to a messy partials folder however you can include partials from sub-folders, Panini will automatically search through the partials folder heirarchy looking for any paritals referenced in a given page...</p>
+		<h5>Example: Partial for an Orbit Text Carousel</h5>
+		{{> orbit-text-carousel}}
+
+		{{#markdown}}
+		# One
+		## Two
+		### Three
+		{{/markdown}}
+
+	</div>
+</div>

@@ -1,0 +1,69 @@
+$dodgerblue: dodgerblue;
+
+$rebeccapurple: rebeccapurple;
+
+
+$darkgoldenrod: darkgoldenrod;
+
+
+$lightseagreen: lightseagreen;
+
+// $topbar-background: red;
+
+
+$foundation-palette: (
+  primary: #0E4E67,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
+
+// 7. Accordion
+// ------------
+
+$accordion-background: $white;
+$accordion-plusminus: true;
+$accordion-item-color: foreground($accordion-background, $primary-color);
+$accordion-item-background-hover: $light-gray;
+$accordion-item-padding: 1.25rem 1rem;
+$accordion-content-background: $white;
+$accordion-content-border: 1px solid $light-gray;
+$accordion-content-color: foreground($accordion-background, $primary-color);
+$accordion-content-padding: 1rem;
+
+// 8. Accordion Menu
+// -----------------
+
+$accordionmenu-arrows: true;
+$accordionmenu-arrow-color: $primary-color;
+
+
+$menu-margin: 0;
+$menu-margin-nested: 1rem;
+$menu-item-padding: 0.7rem 1rem;
+$menu-item-color-active: $white;
+$menu-item-background-active: map-get($foundation-palette, secondary);
+$menu-icon-spacing: 0.25rem;
+
+$topbar-padding: 0.5rem;
+$topbar-background: map-get($foundation-palette, primary);
+$topbar-submenu-background: map-get($foundation-palette, secondary);
+$topbar-title-spacing: 1rem;
+$topbar-input-width: 400px;
+$topbar-unstack-breakpoint: medium;
+
+.topbar {
+
+		$anchor-color: $white;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+
+}
+
+
+$list-style-position: inside;
+
+
+
+
+

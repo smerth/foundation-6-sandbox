@@ -1,0 +1,43 @@
+<script type="text/javascript" charset="utf-8">
+
+    // Create a script element, populate with call to Github API, append the script to the page head
+    var script = document.createElement('script');
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    // The json data (response), which is an array of objects, is printed to the page
+    function foo(response) {
+        
+        // var meta = response.meta; // Github User account meta data
+        var data = response.data; // Github User repo data
+
+        // Check the console to see if your getting the data
+        // console.log(meta);
+        // console.log(data);
+
+        // Iternate through data to make a list of key:value pairs
+        var output = '';
+        for (var i = 0; i <= data.length; i++) {
+            for (key in data[i]) {
+                if (data[i].hasOwnProperty(key)) {
+                    output += '<li>';
+                    output +=  key + ': ' + data[i][key];
+                    output += '</li>';
+                }
+            } // for each object
+        } // for each array
+
+        // Output the list of key:value pairs to the "mydata" element on the page
+        var update = document.getElementById('mydata');
+        update.innerHTML = output;
+    }
+
+</script>
+
+<!-- Page content -->
+<div class="row">
+    <div class="columns small-12">
+        <h1>Github Repo Data: </h1>
+        <ol id="mydata"></ol>
+    </div>
+</div>

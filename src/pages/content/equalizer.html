@@ -1,0 +1,153 @@
+
+                <header class="row">
+                    <div class="large-3 columns medium-text-center small-text-center">
+                        <img src="../assets/img/logo.png" alt="The Landon Hotel.">
+                    </div>
+                    <div class="medium-9 columns medium-text-center small-text-center large-text-right">
+                        <h2>You'll feel at home in our neighborhood</h2>
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="medium-12 columns topspace">
+                        <div class="callout warning">
+                            <h1>Clearing Lightbox No Longer in Foundation</h1>
+                            <p>One option, for good responsive features is Magnific.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-equalizer>
+                    <article class="large-9 columns" data-equalizer-watch>
+                        <h3>Maginific Lightbox gallery</h3>
+                        <p>
+                            You may put any HTML content in each gallery item and
+                            <a href="http://codepen.io/dimsemenov/pen/vKrqs">mix content types</a> . In this example lazy-loading of images is enabled for the next image based on move direction. If you wish to add touch-swipe support, check
+                            <a href="http://coding.smashingmagazine.com/2013/05/02/truly-responsive-lightbox/">my article</a> on the Smashing Magazine, or
+                            <a href="http://photoswipe.com">new PhotoSwipe</a> script.
+                        </p>
+
+
+
+<div class="columns small-12 grid-example" data-equalizer="foo">
+<div class="">
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="small-2 large-4 columns">small-2 large-4 columns</div>
+  <div class="small-4 large-4 columns">small-4 large-4 columns</div>
+  <div class="small-6 large-4 columns">small-6 large-4 columns</div>
+</div> 
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="large-3 columns">large-3 columns</div>
+  <div class="large-6 columns">large-6 columns</div>
+  <div class="large-3 columns">large-3 columns</div>
+</div>
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="small-6 large-2 columns">small-6 large-2 columns</div>
+  <div class="small-6 large-8 columns">small-6 large-8 columns</div>
+  <div class="small-12 large-2 columns">small-12 large-2 columns</div>
+</div>
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="small-3 columns">small-3 columns</div>
+  <div class="small-9 columns">small-9 columns</div>
+</div>
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="large-4 columns">large-4 columns</div>
+  <div class="large-8 columns">large-8 columns</div>
+</div>
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="small-6 large-5 columns">small-6 large-5 columns</div>
+  <div class="small-6 large-7 columns">small-6 large-7 columns</div>
+</div>
+<div class="row topspace" data-equalizer-watch="foo">
+  <div class="large-6 columns">large-6 columns</div>
+  <div class="large-6 columns">large-6 columns</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+                        <h3 class="topspace">Parent Container Popup</h3>
+                        <p>All the links in the parent container are treated as pop-ups</p>
+                        <div class="parent-container">
+                            <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg">Open popup 1</a>
+                            <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg">Open popup 2</a>
+                            <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg">Open popup 3</a>
+                        </div>
+                        <h3 class="topspace">Single Object From A jQuery Array</h3>
+                        <button id="single-object">View Image</button>
+                        <h3 class="topspace">Multiple Objects From A jQuery Array</h3>
+                        <button class="bottomspace" id="multiple-objects">View Images</button>
+                    </article>
+                    <!-- end large-9 -->
+                    <aside class="large-3 columns" >
+                        <div class="callout secondary" data-equalizer-watch>
+                            <p>Forget the hustle and bustle that vacation or work travel often brings. Experience San Francisco with an inner calm and peace, and feel like a native exploring your own town. There’s no better way to feel the local vibe than a welcoming stay at the <strong>Bernal Heights Landon</strong>. </p>
+                        <p>If you’re craving time in the great outdoors, rent a bicycle to explore the neighborhood or take a mini-hike up to the top of Bernal Hill. Bernal Hill Park, one of the largest parks in San Francisco, is a designated “oﬀ-leash” dog park, so if you’re traveling with Fido, you won’t want to miss this opportunity. If intellectual pursuits are more your style, take time to browse the substantial stacks at the nearby San Francisco Public Library, newly reopened after an extensive renovation, or peruse the offerings at one of the local “mom and pop” bookstores.</p>
+                        </div>
+                        
+                    </aside>
+                </div>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                }
+            }
+        });
+    });
+
+    $('.parent-container').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image'
+            // other options
+    });
+
+
+    $('#single-object').magnificPopup({
+        items: {
+            src: 'http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg'
+        },
+        type: 'image' // this is default type
+    });
+
+    $('#multiple-objects').magnificPopup({
+        items: [{
+            src: 'http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg'
+        }, {
+            src: 'http://vimeo.com/161890877',
+            type: 'iframe' // this overrides default type
+        }, {
+            src: $('<div>Dynamically created element</div>'), // Dynamically created element
+            type: 'inline'
+        }, {
+            src: '<div>HTML string</div>',
+            type: 'inline'
+        }, {
+            src: '#my-popup', // CSS selector of an element on page that should be used as a popup
+            type: 'inline'
+        }],
+        gallery: {
+            enabled: true
+        },
+
+
+        type: 'image' // this is default type
+    });
+    </script>
+

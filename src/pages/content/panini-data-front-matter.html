@@ -1,0 +1,60 @@
+---
+aria-label: Images of china
+image1: ../assets/img/orbit/china/china1.jpg
+caption1: Image of China 1.
+image2: ../assets/img/orbit/china/china2.jpg
+caption2: Image of China 2!
+image3: ../assets/img/orbit/china/china3.jpg
+caption3: Image of China 3!!
+image4: ../assets/img/orbit/china/china4.jpg
+caption4: Image of China 5!!!
+---
+
+
+<div class="row">
+	<div class="columns small-12">
+
+{{#markdown }}
+# Panini Data: Front Matter
+
+<div class="callout primary columns small-12">
+
+<h3>An Orbit image carousel is populated with data provided by the page front matter.</h3>
+</div>
+
+```
+---
+aria-label: Images of china
+image1: ../assets/img/orbit/china/china1.jpg
+---
+```
+
+{{> orbit-image-carousel}}
+
+
+Custom data can be added to your pages. This data can then be inserted into your HTML through Handlebars. There are two ways to add data to a project.
+
+To add variables to a specific page only, add it at the top of the page's HTML as a Front Matter block. Let's say the below content is inside src/pages/index.html.
+
+```html
+---
+title: Page Title
+description: Lorem ipsum.
+---
+<!-- The rest of your HTML is down here. -->
+```
+Now, you can insert the values of these variables into the ```index.html``` page, or the ```default.html``` layout. To insert a variable, wrap the name of the variable in double curly braces, like so:
+
+```html
+<h1>\{{ title }}</h1>
+```
+
+In the example above the caruousel is populated using front matter included in the page on which the carousel is embedded. So you can really cut and paste the carousel anywhere and swap out the images in the front matter.
+
+
+
+
+{{/markdown }}
+
+	</div>
+</div>

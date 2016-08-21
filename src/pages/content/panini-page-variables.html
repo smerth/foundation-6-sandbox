@@ -1,0 +1,59 @@
+
+
+<div class="row">
+	<div class="columns small-12">
+
+{{#markdown}}
+
+# Panini - Page Variables
+Pages have a few built-in variables, which can be used within the page template itself, or within a layout or partial being used in tandem with the page.
+
+
+
+
+## page
+Prints the name of the current page, without its original file extension. In the below example, if the page is ```index.html```, ```\{{page}}``` will become index.
+
+```html
+<p>You are here: {{page}}</p>
+```
+
+You can use a helper to process this from a filename to page title (ie: remove the hyphens, change to title-case.)
+
+
+
+## root
+
+Use ```\{{root}}``` before a file path to make sure it works no matter what folder the current page is in.
+
+For example, a path to an external CSS file will need to be different if the current page is at the root level of your site, or in a sub-folder.
+
+
+Here's how you'd use it with a ```<link>``` tag:
+
+
+```html
+<link rel="stylesheet" href="{{root}}assets/css/app.css">
+```
+
+If the page is ```index.html```, the path will look like this:
+
+
+```html
+<link rel="stylesheet" href="assets/css/app.css">
+```
+
+If the page is ```folder/page.html```, the path will look like this:
+
+
+```html
+<link rel="stylesheet" href="../assets/css/app.css">
+```
+
+The ```../``` is added only on pages in a sub-folder, so the CSS can still be properly loaded.
+
+
+{{/markdown}}
+		
+	</div>
+</div>

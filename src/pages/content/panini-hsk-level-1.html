@@ -1,0 +1,28 @@
+<div class="row topspace">
+    <div class="columns info small-12">
+        <div class="callout">
+            <h1><i class="fi-check"></i>Panini Data: HSK card example</h1>
+            <h5>Here are all 150 words from HSK Level 1.  The data is consumed from a local json file.</h5>
+        </div>
+    </div>
+</div>
+<!-- data is brought in from hsk-level-1.json -->
+<div class="card-level-test row small-up-1 medium-up-3 topspace" data-equalizer>
+    {{#each hsk-level-1.word-list}}
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-{{ this.word.c-count }}">{{ this.word.title }}</div>
+                <span class="pronunciation">{{ this.word.pron }}</span>
+            </div>
+            <div class="definition">
+                <p>{{ this.word.def }}</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

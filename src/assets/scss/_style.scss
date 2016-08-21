@@ -1,0 +1,206 @@
+@import 'variables';
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	height-min: 600px;
+
+}
+.off-canvas-content {
+
+		// background-color: yellow;
+}
+
+.radius, button.radius, .button.radius {
+    border-radius: 3px; }
+  button.round, .button.round {
+    border-radius: 1000px; }
+
+
+header h2 {
+	font-family: Georgia, serif;
+
+	font-style: italic;
+	font-weight: normal;
+	padding-top: .4em;
+}
+h1, h2, h3, h4, h5, h6 {
+	// color: #5F2D8C;
+	// font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+
+/* chapter 3 styling challenge */
+article {
+	padding-bottom: 2em;
+}
+article .float-left {
+	padding: 0 1em 1em 0;
+}
+article .float-right {
+	padding: 0 0 1em 1em;
+}
+.topspace {
+	padding-top: 2em;
+}
+
+.bottomspace{
+	padding-bottom:3em;
+}
+.callout p {
+	// font-size: 0.95em;
+	color: #999;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+
+.collophone {
+background-color: $dodgerblue;
+	p, a {
+		color: white;
+	}
+}
+
+.orbit-text-only-demo {
+	color: white;
+	h3 {
+		color: white;
+	}
+.orbit-slide:nth-of-type(1) {
+	background-color: dodgerblue;
+}
+.orbit-slide:nth-of-type(2) {
+	background-color: rebeccapurple;
+}
+.orbit-slide:nth-of-type(3) {
+	background-color: darkgoldenrod;
+}
+.orbit-slide:nth-of-type(4) {
+	background-color: lightseagreen;
+}
+
+.orbit-slide>div{
+	padding: 2em 3em;
+}
+}
+
+.has-nested {
+	font-weight: bold;
+}
+.off-canvas .nested a{
+	font-size: .85em;
+}
+.off-canvas {
+	padding-bottom: 50px;
+}
+
+
+.grid-example {
+	.columns:nth-child(odd) {
+background-color: lightseagreen;
+	}
+		.columns:nth-child(even) {
+background-color: lighten(lightseagreen, 20%);
+	}
+}
+
+
+
+.news-magazine-social-icons {
+	.fi-social-facebook {
+	font-size: 70px;
+color: #2199e8;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2199e8, 0 0 30px #2199e8, 0 0 40px #2199e8, 0 0 50px #2199e8, 0 0 75px #2199e8;
+}
+
+.fi-social-twitter {
+	font-size: 70px;
+color: rgba(245, 159, 26, 0.8);
+text-shadow: 1px 4px 6px #FFF, 0 0 0 #000, 1px 4px 6px #FFF;
+}
+
+
+.fi-social-zurb {
+	font-size: 70px;
+color: #B8D30B;
+}
+
+.fi-social-instagram {
+	font-size: 70px;
+color: #2DAEBF;
+text-shadow: 0px 1px 0px #0092b3, 0px 2px 0px #0087a6, 0px 3px 0px #008099, 0px 4px 0px #00758c, 0px 5px 0px #555, 0px 6px 0px #006a80, 0px 0px 0px #006073, 0px 8px 7px #005566;
+}
+
+.fi-social-youtube {
+	font-size: 70px;
+text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+color: #A9014B;
+}
+
+.fi-social-pinterest {
+	font-size: 70px;
+color: pink;
+text-shadow: 0px 1px 0px pink, 0px 2px 0px pink, 0px 3px 0px pink, 0px 4px 0px pink, 0px 5px 0px red, 0px 6px 0px pink, 0px 0px 0px pink, 0px 8px 7px pink;
+
+}
+
+.fi-social-tumblr {
+		font-size: 70px;
+color: lightseagreen;
+text-shadow: 1px 4px 6px #FFF, 0 0 0 #000, 1px 4px 6px #FFF;
+}
+
+
+.menu > li > a > .stat-type {
+	clear: left;
+}
+
+}
+
+ul li {
+	a {
+		font-family: 'Noto Sans', sans-serif;
+	}
+
+}
+
+
+
+pre {
+	margin-bottom: 1em;
+}
+code {
+	font-size: .85em;
+}
+
+
+#hsk-definition-list-example-1 {
+	.hsk-item {
+		margin-bottom: 2em;
+	}
+	.hsk-word {
+		font-family: Georgia;
+		font-size: 3em;
+
+	}
+	.hsk-pronounciation {
+		color: green;
+
+	}
+}
+
+
+.page-info {
+
+	background-color: lightseagreen;;
+color: white;
+.fi-check, h5 {
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+
+}

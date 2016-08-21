@@ -1,0 +1,41 @@
+<!-- ---
+aria-label: Images of space exploration
+image1: ../assets/img/orbit/01.jpeg
+caption1: Space, the final frontier.
+image2: ../assets/img/orbit/02.jpeg
+caption2: Lets Rocket!
+image3: ../assets/img/orbit/03.jpeg
+caption3: Encapsulating
+image4: ../assets/img/orbit/04.jpeg
+caption4: Outta This World
+--- -->
+
+
+<div class="orbit" role="region" aria-label="{{aria-label}}" data-orbit>
+    <ul class="orbit-container">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <li class="is-active orbit-slide">
+            <img class="orbit-image" src="{{image1}}" alt="Space">
+            <figcaption class="orbit-caption">{{caption1}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="{{image2}}" alt="Space">
+            <figcaption class="orbit-caption">{{caption2}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="{{image3}}" alt="Space">
+            <figcaption class="orbit-caption">{{caption3}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="{{image4}}" alt="Space">
+            <figcaption class="orbit-caption">{{caption4}}</figcaption>
+        </li>
+    </ul>
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+</div>
