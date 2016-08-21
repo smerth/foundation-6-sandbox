@@ -109,7 +109,7 @@ gallery.init();
 });
 
 
-
+$(document).ready(function() {
 
 $('#open-photoswipe').click( function() {
 
@@ -146,7 +146,7 @@ gallery.init();
 } );
 
 
-
+});
 
 
 
@@ -166,6 +166,8 @@ $(document).ready(function() {
 // ********************************
 // ISOTOPE.JS - element layout, sorting and filtering
 // ********************************
+
+$(document).ready(function() {
 
 // Example 1
 $('.isotope-example-1').isotope({
@@ -219,6 +221,12 @@ $('.grid-masonry-fluild-sizing').isotope({
         columnWidth: '.grid-sizer'
     }
 });
+
+});
+
+
+
+
 
 
 
