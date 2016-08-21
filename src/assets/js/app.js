@@ -6,7 +6,6 @@ $(document).foundation(
 // MAGNIFIC.JS - alternate lightbox plugin
 // ********************************
 
-// Magnific Popup Demo
 $(document).ready(function() {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
@@ -25,7 +24,6 @@ $(document).ready(function() {
             }
         }
     });
-});
 
 
 
@@ -66,6 +64,12 @@ $('#multiple-objects').magnificPopup({
 
     type: 'image' // this is default type
 });
+
+
+});
+
+
+
 
 
 // ********************************
@@ -261,10 +265,8 @@ $('.grid-masonry-fluild-sizing').isotope({
 // 'height': '50%'
 // });
 
-
-
-
-$(".jquery-flip-card-1").flip({
+$(document).ready(function() {
+    $(".jquery-flip-card-1").flip({
     axis: 'x',
     trigger: 'click',
     forceWidth: false,
@@ -286,6 +288,10 @@ $(".jquery-flip-chinese-card").flip({
     forceWidth: false,
     forceHeight: false
 });
+});
+
+
+
 
 
 
