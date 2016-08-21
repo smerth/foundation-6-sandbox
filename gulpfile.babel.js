@@ -9,7 +9,9 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-import deploy   from 'gulp-gh-pages';
+
+// var gulp = require('gulp');
+import ghPages from 'gulp-gh-pages';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -34,10 +36,14 @@ gulp.task('default',
   gulp.series('build', server, watch));
 
 
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
+// Push the dist folder to gh-pages
+gulp.task('deploy',
+  gulp.series(pushghpages));
+
+function pushghpages() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+}
 
 
 // Delete the "dist" folder
