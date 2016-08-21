@@ -27,6 +27,8 @@ $(document).ready(function() {
     });
 });
 
+
+
 $('.parent-container').magnificPopup({
     delegate: 'a', // child items selector, by clicking on it popup will open
     type: 'image'
@@ -69,6 +71,45 @@ $('#multiple-objects').magnificPopup({
 // ********************************
 // PHOTSWIPE.JS - alternate lightbox plugin made for swiping on mobile devices
 // ********************************
+$(document).ready(function() {
+  // put all your jQuery goodness in here.
+  $('#open-photoswipe').click( function() {
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+var items = [
+    {
+        src: 'https://placekitten.com/600/400',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
+    }
+];
+
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
+
+
+    return false;
+
+} );
+});
+
+
+
 
 $('#open-photoswipe').click( function() {
 
