@@ -7,6 +7,7 @@ $(document).foundation(
 // ********************************
 
 $(document).ready(function() {
+    // initialize a magnifique popup gallery
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
