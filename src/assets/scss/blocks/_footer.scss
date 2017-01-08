@@ -4,21 +4,17 @@ footer {
         font-size: 0.8em;
     }
     .footer-menu-bar {
-        color: white;
-        background-color: red;
+        color: $white;
+        background-color: $violet;
         a,
         p {
-            color: white;
+            color: $white;
         }
     }
     .menu-panel {
         background-color: map-get($foundation-palette, secondary);
         padding: 1em;
         padding-bottom: 2em;
-        a,
-        p {
-            color: white;
-        }
     }
     .last-word {
         background-color: black;

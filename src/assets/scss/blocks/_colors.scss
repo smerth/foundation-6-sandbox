@@ -1,0 +1,14 @@
+// Topbar menu
+.top-bar {
+    a {
+        color: lighten($violet, 40%);
+    }
+    a:hover {
+        color: $white;
+    }
+}
+
+// Page header blocks
+header h2 {
+    color: $violet;
+}

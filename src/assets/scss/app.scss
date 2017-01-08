@@ -1,9 +1,9 @@
 @charset 'utf-8';
-
 @import 'settings';
+@import 'blocks/colors';
 @import 'foundation';
 @import 'motion-ui';
-
+@include add-foundation-colors;
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid; //<-FLEXBOX IS ON
@@ -45,20 +45,18 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 @include foundation-flex-classes; //<- FLEXBOX IS ON!!!
-
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
 @import 'style';
+@import 'blocks/fonts';
+@import 'blocks/cards';
+@import 'blocks/footer';
+@import 'blocks/foundation-icons';
+@import 'blocks/social-icons';
+@import 'blocks/offcanvas-menu';
 @import 'components/magnific/magnific-popup';
 @import 'components/highlight/foundation';
 @import 'components/isotope/isotope';
 @import 'components/photoswipe/photoswipe';
 @import 'components/photoswipe/default-skin';
 @import 'components/flippant/flippant';
-
-
-
-@import 'building-blocks/foundation-icons';
-@import 'building-blocks/cards';
-@import 'building-blocks/footer';

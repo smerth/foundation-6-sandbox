@@ -1,0 +1,17 @@
+.off-canvas-wrapper,
+ul#m1.vertical.menu,
+.is-drilldown {
+    background: $white;
+}
+
+.off-canvas {
+    @include breakpoint(medium) {
+        top: 10px;
+    }
+    .menu-text {
+        margin-bottom: 10px;
+    }
+    ul.nested.vertical.menu.submenu.is-drilldown-submenu.is-active {
+        margin-left: 0px;
+    }
+}
