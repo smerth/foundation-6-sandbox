@@ -17,7 +17,8 @@ $(document).ready(function() {
 
         for (var i = 0; i < anchor.length; i++) {
             // depends on fixed url structure
-            if (anchor[i].href.split('/')[4] == current) {
+
+            if (anchor[i].href.split('/').slice(-1)[0] == current) {
                 anchor[i].className = "active";
             }
         }
