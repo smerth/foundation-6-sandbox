@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         var nav = document.getElementById('main-menu'),
             anchor = nav.getElementsByTagName('a'),
-            current = window.location.pathname.split('/')[2];
+            current = window.location.pathname.split('/').slice(-1)[0];
 
         for (var i = 0; i < anchor.length; i++) {
             // depends on fixed url structure
