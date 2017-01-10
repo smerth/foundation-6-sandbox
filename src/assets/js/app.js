@@ -17,7 +17,7 @@ $(document).ready(function() {
 
         for (var i = 0; i < anchor.length; i++) {
             // depends on fixed url structure
-
+            // http://stackoverflow.com/questions/16806464/get-the-second-last-parameter-in-a-url-usin  
             if (anchor[i].href.split('/').slice(-1)[0] == current) {
                 anchor[i].className = "active";
             }
