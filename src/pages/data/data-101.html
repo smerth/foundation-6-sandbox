@@ -1,0 +1,121 @@
+---
+chapter: Data
+topic: Panini Front Matter
+demonstrates: Front Matter consumed by an Orbit Image Carousel partial
+details: "An Orbit partial is defined using Panini variables ({{aria-label}}, {{image}}, and {{caption}}). These are then provided in the front matter of the page in which the Orbit partial is embedded.  Any page, or any partial embedded in a page, can consume data provided by a page's front matter through the use of Panini variables." 
+
+aria-label: Images of china
+image1: ../assets/img/orbit/china/china1.jpg
+caption1: Image of China 1.
+image2: ../assets/img/orbit/china/china2.jpg
+caption2: Image of China 2!
+image3: ../assets/img/orbit/china/china3.jpg
+caption3: Image of China 3!!
+image4: ../assets/img/orbit/china/china4.jpg
+caption4: Image of China 5!!!
+---
+
+
+<div class="row">
+	<div class="columns small-12">
+
+{{> orbit-image-carousel}}
+
+    </div>
+</div>
+
+<div class="row">
+	<div class="columns small-12">
+        <div class="callout">
+
+{{#markdown }}
+
+## How the Orbit Carousel is set up
+
+The images are added as front matter at the top of page on which they are displayed.  Which is rather convenient.
+
+```
+---
+aria-label: Images of china
+image1: ../assets/img/orbit/china/china1.jpg
+caption1: Image of China 1.
+image2: ../assets/img/orbit/china/china2.jpg
+caption2: Image of China 2!
+image3: ../assets/img/orbit/china/china3.jpg
+caption3: Image of China 3!!
+image4: ../assets/img/orbit/china/china4.jpg
+caption4: Image of China 5!!!
+---
+```
+
+The carousel is inserted on the page using a panini tag.
+
+```html
+\{{> orbit-image-carousel}}
+```
+
+The tag refers to the filename that acts as a template to format the data.  This template calls for 4 sets of data, one per iamge.  This data is just what we provide in the front matter
+
+@ partials/orbit-carousels/orbit-image-carousel.html
+
+```html
+<div class="orbit" role="region" aria-label="\{{aria-label}}" data-orbit>
+    <ul class="orbit-container">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <li class="is-active orbit-slide">
+            <img class="orbit-image" src="\{{image1}}" alt="Space">
+            <figcaption class="orbit-caption">\{{caption1}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="\{{image2}}" alt="Space">
+            <figcaption class="orbit-caption">\{{caption2}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="\{{image3}}" alt="Space">
+            <figcaption class="orbit-caption">\{{caption3}}</figcaption>
+        </li>
+        <li class="orbit-slide">
+            <img class="orbit-image" src="\{{image4}}" alt="Space">
+            <figcaption class="orbit-caption">\{{caption4}}</figcaption>
+        </li>
+    </ul>
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+</div>
+```
+
+## In General
+
+Custom data can be added to your pages via Front Matter. This data can then be inserted into your HTML through Panini Tags. 
+
+To add variables to a **specific page** only, add it at the top of the page's HTML as a front-matter block. Let's say the below content is @ src/pages/index.html.
+
+```html
+---
+title: Page Title
+description: Lorem ipsum.
+---
+<!-- The rest of your HTML is down here. -->
+```
+
+With the front matter listed on the page you can insert the values of these variables into the page using the tags `\{{title}}` and `\{{description}}`.
+
+```html
+<h1>\{{ title }}</h1>
+```
+## Bonus
+
+<div class="callout success">
+Here's something cool: these variables are also available to any layout from which the current page inherits...  Nice!'
+</div>
+
+{{/markdown }}
+
+        </div>
+	</div>
+</div>

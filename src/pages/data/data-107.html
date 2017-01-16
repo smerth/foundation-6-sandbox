@@ -1,0 +1,50 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<h5>Trying to get GitHub JSON data into handlebars variables</h5>
+
+
+<!--If you put jQuery into app.js may not need to load jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Although Panini is build on Handlebars.js you need to add handlbars if you want to use it... -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+
+<script type="text/javascript">
+$("document").ready(function() {
+	var template = $("#itemTemplate").html();
+	// Handlebars compiles the template into a callable function
+	var renderer = Handlebars.compile(template);
+	// call the compiled function with the template data
+	var result = renderer({
+		"item": "Whisper 4000 in-home heater and dog walker",
+		"description": "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+		"price": 895.99,
+		"inStock": true,
+		"quantity": 100
+	});
+	$("#container").html(result);
+});
+</script>
+
+
+
+<h5>Github repos for smerth:</h5>
+
+<!--This script defines the template-->
+{{{{raw}}}}
+<script type="text/x-handlebars-template" id="itemTemplate">
+	<div class="itemTemplateWrapper">
+		<div><span>Item: </span><span>{{item}}</span></div>
+		<div><span>Description: </span><span>{{description}}</span></div>
+		<div><span>Price: </span><span>{{price}}</span></div>
+	</div>
+</script>
+{{{{/raw}}}}
+<!-- This is the container where the templates will be instantiated -->
+<div id="container"></div>
+

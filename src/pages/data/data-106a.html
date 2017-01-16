@@ -1,0 +1,132 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+
+<!-- Although Panini is build on Hnadlebars.js you need to add handlbars... -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    // Create a script element, populate with call to Github API, append the script to the page head
+    var script = document.createElement('script');
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+
+    function foo(response) {
+
+
+// Github user repo data is an array of objects called data
+var an_array = response.data
+
+var source   = document.getElementById("template").innerHTML;
+var template = Handlebars.compile(source);
+
+
+        // 4. populate template with data
+        var result = template(an_array);
+        // 5. insert resulting html before page end
+        $("#mydata").html(result);
+
+
+console.log(an_array);
+console.log(an_array[5]);
+console.log(an_array[5]["name"]);
+
+
+console.log(template(an_array));
+
+
+
+    }
+</script>
+
+{{{{raw}}}}
+<script id="template" type="text/x-template">
+<ul>
+    {{#each this}}
+        <li>{{this.name}}</li>
+    {{/each}}
+</ul>
+</script>
+{{{{/raw}}}}
+
+
+<div class="row">
+    <div class="columns small-12">
+        <h2></h2>
+
+        <div id="mydata"></div>
+
+{{#markdown }}
+# First try
+
+Trying to implement this solution to get an array of json objects into handlebars template... [handlebars array of json object](http://stackoverflow.com/questions/11582756/handlebars-array-of-json-object)
+
+<div class="callout alert">Doesn't work</div>
+
+
+## Javascript
+
+```javascript
+// Create a script element, populate with call to Github API, append the script to the page head
+var script = document.createElement('script');
+script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+function foo(response) {
+
+    // User account meta data
+    var meta = response.meta;
+    // User repo data
+    var repo = response.data;
+
+    // Check the console to see if your getting the data
+    // console.log(meta);
+    console.log(repo);
+
+    // 1. fetch the template
+    var source = document.getElementById("template").innerHTML;
+    // 2. compile template
+    var template = Handlebars.compile(source);
+    // 3. put a wrapper around array of objects
+    var wrapper = {
+        objects: repo
+    };
+    // 4. populate template with data
+    var result = template(wrapper);
+    // 5. insert resulting html before page end
+    $("#mydata").html(result);
+
+
+    // Check the template output in the console
+    console.log(template(wrapper));
+
+}
+```
+
+
+
+
+## Handlebars Template
+
+```html
+<ul>
+    \{{#each objects}}
+    <li>\{{name}}</li>
+    \{{/each}}
+</ul>
+```
+
+
+
+{{/markdown}}
+
+
+
+    </div>
+</div>

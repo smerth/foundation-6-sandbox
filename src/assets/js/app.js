@@ -1,57 +1,76 @@
-$(document).foundation(
+$(document).foundation();
 
-);
+
 
 // ********************************
-// Add active class to active menu links in the main menu
-// from the comments: 
-// https://css-tricks.com/snippets/jquery/add-active-navigation-class-based-on-url/
+// Add active class to to any li containing an anchor href that matches the current page.
 // ********************************
-
 $(document).ready(function() {
-    (function() {
+    var links = $('#main-menu a'),
+        current = window.location.pathname.split('/').slice(-1)[0];
 
-        var nav = document.getElementById('main-menu'),
-            anchor = nav.getElementsByTagName('a'),
-            current = window.location.pathname.split('/').slice(-1)[0];
-
-        for (var i = 0; i < anchor.length; i++) {
-            // depends on fixed url structure
-            // http://stackoverflow.com/questions/16806464/get-the-second-last-parameter-in-a-url-usin  
-            if (anchor[i].href.split('/').slice(-1)[0] == current) {
-                anchor[i].className = "active";
-            }
+    for (var i = 0; i < links.length; i++) {
+        if (links[i].href.split('/').slice(-1)[0] == current) {
+            var target = links[i];
+            target.parentNode.className = "active";
         }
-    })();
+    }
 });
+
 
 // $(document).ready(function() {
 //     (function() {
 
-//         var newClassName = "is-active",
-//             nav = document.getElementById('main-menu'),
-//             activelink = nav.querySelector("a.active");
+//         var nav = document.getElementById('main-menu'),
+//             anchor = nav.getElementsByTagName('a'),
+//             current = window.location.pathname.split('/').slice(-1)[0];
 
-//         var target = activelink.parentNode.parentNode;
-//         // $('#main-menu').foundation('toggle', $target);
-//         $('#element').foundation('down', $;
+//         for (var i = 0; i < anchor.length; i++) {
+//             // depends on fixed url structure
+//             // http://stackoverflow.com/questions/16806464/get-the-second-last-parameter-in-a-url-usin  
+//             if (anchor[i].href.split('/').slice(-1)[0] == current) {
+//                 anchor[i].className = "active";
+//             }
+//         }
 //     })();
 // });
 
-
+// ********************************
+// Call Accordion Menu .down function on any ul in #main-menu containing a.active
+// Causes the accordion sub-menu containing the current page to remain open after page refresh.
+// ********************************
 $(document).ready(function() {
     $('#main-menu a.active').closest('ul').addClass('is-active');
-    var target = $('#main-menu a.active').closest('ul');
+    var target = $('#main-menu li.active').closest('ul');
     $('#main-menu').foundation('down', target);
 });
 
 
-
+    // // Create a script element, populate with call to Github API, append the script to the page head
+    // var script = document.createElement('script');
+    // script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    // document.getElementsByTagName('head')[0].appendChild(script);
+    // function foo(response) {
+    //     // Github user repo data is an array of objects called data
+    //     var an_array = response.data
+    //     var source = document.getElementById("template").innerHTML;
+    //     var template = Handlebars.compile(source);
+    //     // 4. populate template with data
+    //     var result = template(an_array);
+    //     // 5. insert resulting html before page end
+    //     $("#mydata").html(result);
+    //     console.log(an_array);
+    //     console.log(an_array[5]);
+    //     console.log(an_array[5]["name"]);
+    //     console.log(template(an_array));
+    // }
 
 
 // ********************************
 // MAGNIFIC.JS - alternate lightbox plugin
 // ********************************
+
+// PROBLEM?
 
 $(document).ready(function() {
     // initialize a magnifique popup gallery
@@ -256,12 +275,6 @@ $(document).ready(function() {
         layoutMode: 'fitRows'
     });
 
-
-
-
-
-
-
     // ******* FLUID SIZING PAGE
     // external js: isotope.pkgd.js
     $('.grid-masonry-fluild-sizing').isotope({
@@ -284,32 +297,32 @@ $(document).ready(function() {
 // jqueryflip.JS - flipping elements
 // ********************************
 
-// $("#card").flip();
+$("#card").flip();
 
-// $(".card-grid").flip({
-//          trigger: 'click'
-//        });
-
-
-
-// $(".card-grid").flip({
-//     axis: 'y',
-//     trigger: 'click',
-//     forceWidth: false,
-//     forceHeight: false
-// }).find('.column, .card-grid').css({
-// 'height': '50%'
-// });
+$(".card-grid").flip({
+         trigger: 'click'
+       });
 
 
-// $(".card-grid").flip({
-//     axis: 'y',
-//     trigger: 'click',
-//     forceWidth: false,
-//     forceHeight: false
-// }).css({
-// 'height': '50%'
-// });
+
+$(".card-grid").flip({
+    axis: 'y',
+    trigger: 'click',
+    forceWidth: false,
+    forceHeight: false
+}).find('.column, .card-grid').css({
+'height': '50%'
+});
+
+
+$(".card-grid").flip({
+    axis: 'y',
+    trigger: 'click',
+    forceWidth: false,
+    forceHeight: false
+}).css({
+'height': '50%'
+});
 
 $(document).ready(function() {
     $(".jquery-flip-card-1").flip({
@@ -377,34 +390,34 @@ document.addEventListener('click', function(e) {
 })
 
 // THIS ONE WORKS ON FIREFOX
-$(document).ready(function($) {
+// $(document).ready(function($) {
 
-    $('.flippant-open').click(function(e) {
-        var flip = flippant.flip
+//     $('.flippant-open').click(function(e) {
+//         var flip = flippant.flip
 
-            "use strict";
-        var front_content = e.target.parentNode;
-        var card = e.target.parentNode.parentNode;
-        var back_content = card.getElementsByTagName('div')[1].innerHTML;
-        var back = null;
+//             "use strict";
+//         var front_content = e.target.parentNode;
+//         var card = e.target.parentNode.parentNode;
+//         var back_content = card.getElementsByTagName('div')[1].innerHTML;
+//         var back = null;
 
-        if (e.target.classList.contains('card')) {
-            back = flip(front_content, back_content);
-        } else {
-            back = flip(front_content, back_content, 'modal');
-        }
+//         if (e.target.classList.contains('card')) {
+//             back = flip(front_content, back_content);
+//         } else {
+//             back = flip(front_content, back_content, 'modal');
+//         }
 
-        back.addEventListener('click', function(e) {
-            if (e.target.classList.contains('flippant-close')) {
-                back.close(back, 'close');
-            }
-        });
+//         back.addEventListener('click', function(e) {
+//             if (e.target.classList.contains('flippant-close')) {
+//                 back.close(back, 'close');
+//             }
+//         });
 
-        var flip = null;
+//         var flip = null;
 
-    });
+//     });
 
-});
+// });
 
 $(document).ready(function($) {
     // "use strict";

@@ -1,0 +1,55 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<div class="columns small-12">
+<div class="callout alert">
+<h2>Here's the Json data: </h2>
+	<div id="results"></div>
+</div>
+</div>
+
+</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+	    var $results = $('#results');
+
+	    (function($) {
+	        // var url = 'http://www.hsk-endpoint-d7.com//hsk-words-level-1?callback=?';
+            var url = 'https://api.github.com/users/smerth/repos?callback=?&per_page=100'
+
+	        $.ajax({
+	            type: 'GET',
+	            url: url,
+	            async: false,
+	            // jsonpCallback: 'data',
+	            contentType: "application/json",
+	            dataType: 'jsonp',
+	            success: function(json) {
+
+	                console.dir(json.Items);
+	                
+                    var outPut = '<ul>';
+
+	                $.each(json.data, function(i, item) {
+						// outPut += '<div id="hsk-definition-list-example-1"><div><span class="hsk-word">';
+	                    outPut += '<li>' + i + '.' + item.name + '';
+	                    // outPut += '</span><span class="hsk-pronounciation">(';
+	                    // outPut += item.pron;
+	                    // outPut += ')</span></div></div>';
+	                });
+
+                    outPut += '</ul>'
+
+	                $results.html(outPut);
+	            },
+	            error: function(e) {
+	                console.log(e.message);
+	            }
+	        });
+	    })(jQuery);
+    </script>
+

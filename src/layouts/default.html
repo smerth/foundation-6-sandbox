@@ -27,16 +27,19 @@
                 <!-- Page content -->
                 <!-- Shows Off-screen menu hamburger and top-bar on small screens -->
                 <div id="top-bar" class="top-bar show-for-small-only">
-                    <button type="button" class="menu-icon dark" data-toggle="offCanvas"></button>
+                    <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                    {{> topbar-menu}}
                 </div>
-                {{!-- topbar --}}
+                
                 <div class="top-bar show-for-medium">
                     <div class="top-bar-left">
                         {{> topbar-menu}}
                     </div>
                 </div>
                 <!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created by panini. -->
-                {{> body}} {{> footer}}
+{{> info-panel}}
+{{> body}}
+{{> footer}}
             </div>
         </div>
     </div>

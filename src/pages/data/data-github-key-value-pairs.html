@@ -1,0 +1,61 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<script type="text/javascript" charset="utf-8">
+
+    // Create a script element 
+    var script = document.createElement('script');
+    // Set the script scr attribute to a call to Github API and a callback to function foo,
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    // append the script to the page head
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    // Handle the callback response
+    function foo(response) {
+        
+        // var meta = response.meta; // Github User account meta data
+        var data = response.data; // Github User repo data
+
+        // Check the console to see if your getting the data
+        // console.log(meta);
+        // console.log(data);
+
+        // build up the output in a variable
+        var output = '';
+
+        for (var i = 0; i <= data.length; i++) {
+            
+            for (key in data[i]) {
+              
+                if (data[i].hasOwnProperty(key)) {
+                    output += '<div>';
+                    output +=  key + ': ' + data[i][key];
+                    output += '</div>';
+                }
+            
+            } 
+
+
+
+        } // for each array
+
+        // Output the list of key:value pairs to the "mydata" element on the page
+        var update = document.getElementById('mydata');
+        update.innerHTML = output;
+    }
+
+</script>
+
+<!-- Page content -->
+<div class="row">
+    <div class="columns small-12">
+        <div class="callout">
+            <h1>Github Repo Key Value Pairs: </h1>
+            <div id="mydata"></div>
+        </div>
+    </div>
+</div>

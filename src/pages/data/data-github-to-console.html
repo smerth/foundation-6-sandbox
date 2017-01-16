@@ -1,0 +1,64 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<script type="text/javascript" charset="utf-8">
+
+    // Create a script element, populate with call to Github API, append the script to the page head
+    var script = document.createElement('script');
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+
+    // The call to the Github API wraps the json data in a callback function "foo"
+    // The "foo" function handles the json data by writing it to the console
+    function foo(response) {
+      var meta = response.meta;
+      var data = response.data;
+      console.log(meta);
+      console.log(data);
+    }
+
+</script>
+
+
+<div class="row">
+	<div class="columns small-12">
+{{#markdown }}
+
+# Panini Data: External json from Github
+
+<div class="callout primary columns small-12">
+<h5>JSON data is retrieved from a Github account and printed to the console.</h5>
+</div>
+
+Open up your browser's console. Check the log. You will see the json response object from Github containing the users repo data.
+
+<img src="{{root}}assets/img/console.png" alt="image of github json reponse object in the console">
+
+Documentation for obtaining a jsonp response from Github is found here: [Github API v3.0](https://developer.github.com/v3/)
+
+The query string ```?callback=foo``` appended to the request url tells the api to wrap the resonse json object in a callback function with the arbitrary name ```foo```
+
+Here is the handler function that is used to handle ```foo```.
+
+```javascript
+    function foo(response) {
+      var meta = response.meta;
+      var data = response.data;
+      console.log(meta);
+      console.log(data);
+    }
+
+    var script = document.createElement('script');
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+
+    document.getElementsByTagName('head')[0].appendChild(script);
+```
+
+{{/markdown }}
+	</div>
+</div>

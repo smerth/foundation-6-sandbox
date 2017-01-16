@@ -9,9 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-
-// var gulp = require('gulp');
-import ghPages from 'gulp-gh-pages';
+import ghPages  from 'gulp-gh-pages';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -98,7 +96,7 @@ function sass() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    // .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
     .pipe($.if(PRODUCTION, $.cssnano()))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))

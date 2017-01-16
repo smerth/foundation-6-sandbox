@@ -1,3 +1,135 @@
-a.active {
-    font-weight: bold;
+
+// Allow offscreen menu to scroll past bottom of ul
+ul#main-menu.vertical.menu {
+    margin-bottom: 100px;
+}
+
+// .off-canvas-content  {
+//     background-image: url("../img/bg.png");
+// }
+
+// Info panel topic titles
+.info-panel h3 small {
+    color: red;
+}
+
+.top-bar {
+    margin-bottom: 1em;
+}
+
+// .card, .aside, article {
+//     background: white;
+// }
+
+pre {
+    margin-bottom: 1em;
+    font-size: .7em;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+#results {
+    dt {
+        margin-top: 1em;
+    }
+    small {
+        color: blue;
+        padding-left: 0.5em;
+    }
+}
+
+// .equalizer-grid-example div {
+//     background: $orange;
+//     margin-bottom: 0.5em;
+// }
+
+.staff-grid { 
+    ul {
+        list-style: none;
+    }
+}
+
+
+
+// LOGIN FORM
+
+// Default medium-gray color
+// $medium-gray: #cacaca;
+// Default global padding
+$global-padding: 1rem;
+// Global value used for all elements that have a border radius.
+$global-radius: 3px;
+
+// Setting the form border color
+$form-border-color: $medium-gray;
+// Setting the form padding
+$form-padding: $global-padding;
+// Setting the form border radius
+$form-radius: $global-radius;
+
+.log-in-form {
+  border: 1px solid $form-border-color;
+  padding: $form-padding;
+  border-radius: $form-radius;
+}
+
+// SOCIAL LOGIN BUTTONS
+
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #d50f25;
+$text-transform: uppercase;
+$social-login-icon-size: 2rem;
+
+.split.button {
+  width: 100%;
+  
+  &.facebook {
+    background: $facebook-color;
+    text-transform: $text-transform;
+    
+    
+    i {
+      background: darken( $facebook-color, 10% );
+      font-size: $social-login-icon-size;
+              line-height: 0.25rem;
+        margin-left: -0.7rem;
+      
+
+    }
+  }
+  
+  &.twitter {
+    background: $twitter-color;
+    text-transform: $text-transform;
+    
+    
+    i {
+      background: darken( $twitter-color, 10% );
+      font-size: $social-login-icon-size;
+
+    }
+  }
+  
+  &.google {
+    background: $google-color;
+    text-transform: $text-transform;
+
+    
+    
+    i {
+      background: darken( $google-color, 10% );
+      font-size: $social-login-icon-size;
+
+    }
+  }
+  
+  &.left-icon {
+    text-align: right;
+    span {
+      left: 0;
+    }
+  }
 }

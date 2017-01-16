@@ -1,0 +1,83 @@
+---
+chapter: ''
+topic: ''
+demonstrates: ''
+details: ''
+---
+
+<h5>Trying to get GitHub JSON data into handlebars variables</h5>
+
+
+<!--If you put jQuery into app.js may not need to load jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Although Panini is build on Handlebars.js you need to add handlbars if you want to use it... -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+
+
+<script>
+	// var $results = $('#results');
+
+	(function ($) {
+		// var url = 'http://www.hsk-endpoint-d7.com//hsk-words-level-1?callback=?';
+		// var url = 'https://api.github.com/users/smerth/repos?callback=?&per_page=100'
+		var url = 'http://www.hsk-endpoint-d7.com//hsk-words-level-1?callback=?'
+
+
+		$.ajax({
+			type: 'GET',
+			url: url,
+			async: false,
+			jsonpCallback: '',
+			contentType: "application/json",
+			dataType: 'jsonp',
+			success: function (json) {
+
+				// Github user repo data is an array of objects called data
+				
+
+				// Check you have the json in the console
+				console.log(json);
+				
+				// console.log(data[5]);
+				// console.log(data[5]["name"]);
+				
+				var source   = $("#template").html();
+				// var source = document.getElementById("template").innerHTML;
+				var renderer = Handlebars.compile(source);
+				// 4. populate template with data
+				var result = renderer(json);
+				// Check result in console
+				console.log('result' + result);
+				// 5. insert resulting html before page end
+				$("#card").html(result);
+			},
+			error: function (e) {
+				console.log(e.message);
+			}
+		});
+	})(jQuery);
+</script>
+
+<h5>Github repos for smerth:</h5>
+
+<!--This script defines the template-->
+{{{{raw}}}}
+	<script id="template" type="text/x-template">
+			{{#each item}}
+				<div class="medium-4 columns">
+					<div class="card">
+						<div class="content">
+								<h2>{{item.name}}</h2>
+								<p>{{item.description}}</p>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+	</script>
+{{{{/raw}}}}
+<!--This element holds the compiled template-->
+
+<div id="data" class="row card-github"></div>
+
+

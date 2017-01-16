@@ -1,0 +1,22 @@
+{{#unlesspage 'index'}}
+    <div class="info-panel columns large-12">
+        <div class="row callout">
+            <div class="large-12  columns">
+                <h3>{{#if chapter}}<i class="fi-check"></i> {{chapter}}:{{/if}}  {{#if topic}}<small>{{topic}}</small>{{/if}}</h3>
+                {{#if demonstrates}}
+                <h5>Demonstrates:  <span class="subheader">{{demonstrates}}</span></h5>
+                {{/if}}
+                 {{#if page}}
+                <h5>Corresponding Filename: <span class="subheader">{{page}}</span></h5>
+                {{/if}}
+            </div>
+            {{#if details}}
+            <div class="large-12 columns">
+                <p class="callout primary">
+                    {{details}}
+                </p>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+{{/unlesspage}}
