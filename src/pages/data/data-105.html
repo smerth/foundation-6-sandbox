@@ -1,34 +1,13 @@
 ---
-chapter: ''
-topic: ''
-demonstrates: ''
+chapter: Data
+topic: Handlebars Simple
+demonstrates: 'Handlebars compiles data from a javscript array into a template.'
 details: ''
 ---
 
-<!--If you put jQuery into app.js may not need to load jQuery-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- Although Panini is build on Handlebars.js you need to add handlbars if you want to use it... -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-
-<script type="text/javascript">
-$("document").ready(function() {
-	var template = $("#itemTemplate").html();
-	// Handlebars compiles the template into a callable function
-	var renderer = Handlebars.compile(template);
-	// call the compiled function with the template data
-	var result = renderer({
-		"item": "Whisper 4000 in-home heater and dog walker",
-		"description": "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
-		"price": 895.99,
-		"inStock": true,
-		"quantity": 100
-	});
-	$("#container").html(result);
-});
-</script>
-
 <!--This script defines the template-->
-{{{{raw}}}}
+<!--raw - prevents panini processing, allowing handlebars to take over-->
+{{{{raw}}}} 
 <script type="text/x-handlebars-template" id="itemTemplate">
 	<div class="itemTemplateWrapper">
 		<div><span>Item: </span><span>{{item}}</span></div>
@@ -38,7 +17,44 @@ $("document").ready(function() {
 </script>
 {{{{/raw}}}}
 
-<!-- This is the container where the templates will be instantiated -->
+<!-- This is the container where the compiled template will be printed -->
+<div class="row">
+	<div class="columns small-12">
+		<h2>Demo</h2>
+		<div class="callout">
+			<h5>A Product:</h5>
+			<div id="container"></div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns small-12">
+{{# markdown}}
+
+## HTML
+
+```html
+---
+chapter: Data
+topic: Handlebars Simple
+demonstrates: ''
+details: ''
+---
+
+<!--This script defines the template-->
+<!--raw - prevents panini processing, allowing handlebars to take over-->
+\{{\{{raw}}}} 
+<script type="text/x-handlebars-template" id="itemTemplate">
+	<div class="itemTemplateWrapper">
+		<div><span>Item: </span><span>\{{item}}</span></div>
+		<div><span>Description: </span><span>\{{description}}</span></div>
+		<div><span>Price: </span><span>\{{price}}</span></div>
+	</div>
+</script>
+\{{\{{/raw}}}}
+
+<!-- This is the container where the compiled template will be printed -->
 <div class="row">
 	<div class="columns small-12">
 		<div class="callout">
@@ -47,4 +63,37 @@ $("document").ready(function() {
 		</div>
 	</div>
 </div>
+```
 
+## Javascript
+
+```javascript
+// ********************************
+// Handlebars - Simple
+// data-105.html
+// ********************************
+$(document).ready(function() {
+    // only run this script if element exists...
+    var elementExists = document.getElementById("itemTemplate");
+    if (elementExists) {
+        var template = $("#itemTemplate").html();
+        // Handlebars compiles the template into a callable function
+        var renderer = Handlebars.compile(template);
+        // call the compiled function with the template data
+        var result = renderer({
+            "item": "Whisper 4000 in-home heater and dog walker",
+            "description": "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+            "price": 895.99,
+            "inStock": true,
+            "quantity": 100
+        });
+        $("#container").html(result);
+    } // endif
+});
+
+```
+
+
+{{/ markdown}}
+	</div>
+</div>

@@ -1,107 +1,38 @@
 ---
-chapter: ''
-topic: ''
+chapter: Data
+topic: jQuery AJAX call to Drupal
 demonstrates: ''
 details: ''
 ---
 
 <div class="row topspace">
-	<div class="columns small-12 medium-8">
+    <div class="columns small-12 medium-8">
         <div class="callout">
-
-{{#markdown}}
-  
-# Consumming a Drupal 7 JsonP feed
-
-In this example the data is being pulled in from a Drupal 7 site running on localhost.  The Drupal 7 site is running the views_datasource module.  A better option might be running both the services module and the entity_services module together. 
-
-## Heads up:
-
-This is a jQuery Ajax call to the Drupal endpoint. So the data is processed in the jQuery code.
-
-```javascript
-var $results = $('#results');
-
-(function($) {
-    var url = 'http://hsk-endpoint-d7.com//hsk-words-level-1?callback=?';
-
-    $.ajax({
-        type: 'GET',
-        url: url,
-        async: false,
-        jsonpCallback: 'dataHandler',
-        contentType: "application/json",
-        dataType: 'jsonp',
-        success: function(json) {
-
-            var outPut = '';
-
-            $.each(json.Items, function(i, item) {
-                outPut += '<div id="hsk-definition-list-example-1"><div><span class="hsk-word">';
-                outPut += item.title;
-                outPut += '</span><span class="hsk-pronounciation">';
-                outPut += item.pron;
-                outPut += '</span></div></div>';
-            });
-
-            $results.html(outPut);
-        },
-        error: function(e) {
-            console.log(e.message);
-        }
-    });
-})(jQuery);
-```
-
-After fetching the data, I don't know how to make the data available to Panini in a way that is intuitive for building with Foundation 6.  For instance, how to get a handle on the data such that I can build templates in the same way I build them for locally stored JSON data???
-
-```html
-<dl id="hsk-definition-list-example-1">
-\{{#each hsk-level-1.word-list}}
-<div class="hsk-item">
-  <dt lang="zh-Hans"><span class="hsk-word">\{{ this.word.title }}</span> <span class="hsk-pronounciation">(\{{ this.word.pron }})</span></dt>
-  <dd>\{{ this.word.def}}</dd>
-  </div>
-\{{/each}}
-</dl>
-```
-<div class="callout warning">
-N.B. - this is a quick demo so jQuery is called on the page, even though its called site-wide, just so I can write the javascript code to the page below the call (see Panini single page includes.)
-</div>
-
-
-## Drupal as an endpoint
-
-As usual with Drupal there is a universe of options available with respect to building a data endpoint for assorted front-end interfaces.
-
-Drupal 8 is obviously the way to go.  Maybe using the built in rest services or running the D8 services module.  Ultimately though, the best way might be to run GraphQL...
-
-[GraphQL](https://www.youtube.com/watch?v=Co_LUWXES50)
-
-
-{{/markdown}}
-
+            <div class="callout alert">
+                <h2>Only works on localhost!</h2>
+                <p>This page is only meant to test against a locally installed Drupal site serving JSONP</p>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="columns small-12 medium-4">
-    <div class="callout success">
-        <h2>Here's the Json data: </h2>
-        <div id="results"></div>
+    <div class="columns small-12 medium-4">
+        <div class="callout success">
+            <h2>Here's the Json data: </h2>
+            <div id="output-104"></div>
+        </div>
     </div>
-</div>
 
 
 </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-	    var $results = $('#results');
+	    
 
 	    (function($) {
-	        // var url = 'http://www.hsk-endpoint-d7.com//hsk-words-level-1?callback=?';
+
+            var $results = $('#output-104');
             var url = 'https://dl.dropboxusercontent.com/u/8903707/hsk-data.json';
             
-
 	        $.ajax({
 	            type: 'GET',
 	            url: url,

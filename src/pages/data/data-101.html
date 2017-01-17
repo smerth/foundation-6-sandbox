@@ -1,8 +1,8 @@
 ---
 chapter: Data
 topic: Panini Front Matter
-demonstrates: Front Matter consumed by an Orbit Image Carousel partial
-details: "An Orbit partial is defined using Panini variables ({{aria-label}}, {{image}}, and {{caption}}). These are then provided in the front matter of the page in which the Orbit partial is embedded.  Any page, or any partial embedded in a page, can consume data provided by a page's front matter through the use of Panini variables." 
+demonstrates: Orbit Image Carousel partial fed data from page Front Matter.
+details: "An Orbit partial is defined using Panini variables ({{aria-label}}, {{image}}, and {{caption}}). These are then provided by the Front Matter of the page in which the Orbit partial is embedded.  Any page, or, any partial embedded in a page, can consume data provided by a page's Front Matter through the use of Panini variables." 
 
 aria-label: Images of china
 image1: ../assets/img/orbit/china/china1.jpg
@@ -30,7 +30,7 @@ caption4: Image of China 5!!!
 
 {{#markdown }}
 
-## How the Orbit Carousel is set up
+## Front Matter
 
 The images are added as front matter at the top of page on which they are displayed.  Which is rather convenient.
 
@@ -48,13 +48,17 @@ caption4: Image of China 5!!!
 ---
 ```
 
+## Partial Tag
+
 The carousel is inserted on the page using a panini tag.
 
 ```html
 \{{> orbit-image-carousel}}
 ```
 
-The tag refers to the filename that acts as a template to format the data.  This template calls for 4 sets of data, one per iamge.  This data is just what we provide in the front matter
+The tag refers to the filename of the template used to format the data.  The orbital template calls for four images (for each one an image url and a caption must be provided.)
+
+## Partial File
 
 @ partials/orbit-carousels/orbit-image-carousel.html
 
@@ -89,29 +93,10 @@ The tag refers to the filename that acts as a template to format the data.  This
 </div>
 ```
 
-## In General
-
-Custom data can be added to your pages via Front Matter. This data can then be inserted into your HTML through Panini Tags. 
-
-To add variables to a **specific page** only, add it at the top of the page's HTML as a front-matter block. Let's say the below content is @ src/pages/index.html.
-
-```html
----
-title: Page Title
-description: Lorem ipsum.
----
-<!-- The rest of your HTML is down here. -->
-```
-
-With the front matter listed on the page you can insert the values of these variables into the page using the tags `\{{title}}` and `\{{description}}`.
-
-```html
-<h1>\{{ title }}</h1>
-```
 ## Bonus
 
 <div class="callout success">
-Here's something cool: these variables are also available to any layout from which the current page inherits...  Nice!'
+    <h4>Here's something cool: the variables defined in Front Matter are also available to any layout from which the current page inherits...  Nice!'</h4>
 </div>
 
 {{/markdown }}

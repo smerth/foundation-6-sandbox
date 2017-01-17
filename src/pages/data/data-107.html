@@ -1,50 +1,55 @@
 ---
-chapter: ''
+chapter: Data
 topic: ''
 demonstrates: ''
 details: ''
 ---
+<script>
+    // 1. Create a script element, populate with call to Github API
+    var script = document.createElement('script');
+    // 2. Name the callback function you'll define to handle the response
+    script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+    // 3. Append the script to the page head
+    document.getElementsByTagName('head')[0].appendChild(script);
 
-<h5>Trying to get GitHub JSON data into handlebars variables</h5>
 
+    // 4. Handle callback to Github
+    function foo(response) {
 
-<!--If you put jQuery into app.js may not need to load jQuery-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- Although Panini is build on Handlebars.js you need to add handlbars if you want to use it... -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        // 5. Github user repo data is an array of objects called data
+        var array = response.data
+        var source   = document.getElementById("template-107").innerHTML;
+        var template = Handlebars.compile(source);
 
+        // 4. populate template with data
+        var result = template(array);
+        // 5. insert resulting html before page end
+        $("#result").html(result);
 
-<script type="text/javascript">
-$("document").ready(function() {
-	var template = $("#itemTemplate").html();
-	// Handlebars compiles the template into a callable function
-	var renderer = Handlebars.compile(template);
-	// call the compiled function with the template data
-	var result = renderer({
-		"item": "Whisper 4000 in-home heater and dog walker",
-		"description": "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
-		"price": 895.99,
-		"inStock": true,
-		"quantity": 100
-	});
-	$("#container").html(result);
-});
+        // console.log(an_array);
+        // console.log(an_array[5]);
+        // console.log(an_array[5]["name"]);
+        // console.log(template(an_array));
+    }
+
 </script>
 
-
-
-<h5>Github repos for smerth:</h5>
-
-<!--This script defines the template-->
+<!--Handlebars Template-->
+<!--raw helper function - excludes from Panini processing-->
 {{{{raw}}}}
-<script type="text/x-handlebars-template" id="itemTemplate">
-	<div class="itemTemplateWrapper">
-		<div><span>Item: </span><span>{{item}}</span></div>
-		<div><span>Description: </span><span>{{description}}</span></div>
-		<div><span>Price: </span><span>{{price}}</span></div>
-	</div>
+<script id="template-107" type="text/x-template">
+<ul>
+    {{#each this}}
+        <li>{{this.name}}</li>
+    {{/each}}
+</ul>
 </script>
 {{{{/raw}}}}
-<!-- This is the container where the templates will be instantiated -->
-<div id="container"></div>
 
+<!--Print the compiled template to page-->
+<div class="row">
+    <div class="columns small-12">
+        <h2>Github Repositories</h2>
+        <div id="result"></div>
+    </div>
+</div>

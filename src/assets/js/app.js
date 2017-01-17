@@ -1,7 +1,5 @@
 $(document).foundation();
 
-
-
 // ********************************
 // Add active class to to any li containing an anchor href that matches the current page.
 // ********************************
@@ -435,4 +433,195 @@ $(document).ready(function($) {
     // });
 
 
+});
+
+
+
+// ********************************
+// JSON - github ajax
+// data-103.html
+// ********************************
+$(document).ready(function() {
+
+    // only run this script if element exists...
+    var elementExists = document.getElementById("output-103");
+    if (elementExists) {
+
+        // Grab the element to print to
+        var $results = $('#output-103');
+
+        var url = 'https://api.github.com/users/smerth/repos?callback=?&per_page=100'
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            async: false,
+            // jsonpCallback: 'data',
+            contentType: "application/json",
+            dataType: 'jsonp',
+            success: function(json) {
+
+                // console.dir(json.Items);
+
+                var outPut = '<ul>';
+
+                $.each(json.data, function(i, item) {
+                    outPut += '<li>' + i + '. ' + item.name;
+                });
+
+                outPut += '</ul>'
+                $results.html(outPut);
+            },
+            error: function(e) {
+                console.log(e.message);
+            }
+        });
+    } // endif
+});
+
+
+// ********************************
+// JSON - github ajax
+// data-104.html
+// ********************************
+$(document).ready(function() {
+    // only run this script if element exists...
+    var elementExists = document.getElementById("ouput-104");
+    if (elementExists) {
+
+        var $results = $('#output-104');
+        var url = 'https://dl.dropboxusercontent.com/u/8903707/hsk-data.json';
+        
+        $.ajax({
+            type: 'GET',
+            url: url,
+            async: false,
+            jsonpCallback: 'dataHandler',
+            contentType: "application/json",
+            dataType: 'jsonp',
+            success: function(json) {
+
+                console.dir(json.Items);
+
+                var output = '<dl>';
+
+                $.each(json.Items, function(i, item) {
+                    output += '<dt>' + '<h4>' + item.title + '<small>' + item.pron + '</small>' + '</h4>' + '</dt>'
+                    output += '<dd>' + item.def + '</dd>'
+                });
+
+                output += '</dl>'
+
+                $results.html(output);
+            },
+            error: function(e) {
+                console.log(e.message);
+            }
+        });
+    } // endif
+});
+
+
+// ********************************
+// Handlebars - Simple
+// data-105.html
+// ********************************
+$(document).ready(function() {
+    // only run this script if element exists...
+    var elementExists = document.getElementById("itemTemplate");
+    if (elementExists) {
+        var template = $("#itemTemplate").html();
+        // Handlebars compiles the template into a callable function
+        var renderer = Handlebars.compile(template);
+        // call the compiled function with the template data
+        var result = renderer({
+            "item": "Whisper 4000 in-home heater and dog walker",
+            "description": "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+            "price": 895.99,
+            "inStock": true,
+            "quantity": 100
+        });
+        $("#container").html(result);
+    } // endif
+});
+
+// ********************************
+// Data: Handlebars - Github AJAX
+// data-106.html
+// ********************************
+$(document).ready(function() {
+    // only run this script if element exists...
+    var elementExists = document.getElementById("template-106");
+    if (elementExists) {
+		// var url = 'http://www.hsk-endpoint-d7.com//hsk-words-level-1?callback=?';
+		var url = 'https://api.github.com/users/smerth/repos?callback=?&per_page=100'
+
+		$.ajax({
+			type: 'GET',
+			url: url,
+			async: false,
+			jsonpCallback: 'smerth',
+			contentType: "application/json",
+			dataType: 'jsonp',
+			success: function smerth (json) {
+
+				// Github user repo data is an array of objects called data
+				var data = json.data
+
+				// Check you have the json in the console
+				console.log(json);
+				console.log(data);
+				// console.log(data[5]);
+				// console.log(data[5]["name"]);
+				
+				var source   = $("#template-106").html();
+				// var source = document.getElementById("template").innerHTML;
+				var renderer = Handlebars.compile(source);
+				// 4. populate template with data
+				var result = renderer(data);
+				// Check result in console
+				console.log('result of renderer:' + result);
+				// 5. insert resulting html before page end
+				$("#target-element").html(result);
+			},
+			error: function (e) {
+				console.log(e.message);
+			}
+		});
+
+    } // endif
+});
+
+
+// ********************************
+// Handlebars - Handlebars Github jQuery
+// data-107.html
+// ********************************
+
+// // 1. Create a script element, populate with call to Github API
+// var script = document.createElement('script');
+// // 2. Name the callback function you'll define to handle the response
+// script.src = 'https://api.github.com/users/smerth/repos?callback=foo';
+// // 3. Append the script to the page head
+// document.getElementsByTagName('head')[0].appendChild(script);
+
+$(document).ready(function() {
+    // // 4. Handle callback to Github
+    // function foo(response) {
+
+    //     // 5. Github user repo data is an array of objects called data
+    //     var an_array = response.data
+    //     var source   = document.getElementById("template-107").innerHTML;
+    //     var template = Handlebars.compile(source);
+
+    //     // 4. populate template with data
+    //     var result = template(an_array);
+    //     // 5. insert resulting html before page end
+    //     $("#result").html(result);
+
+    //     console.log(an_array);
+    //     console.log(an_array[5]);
+    //     console.log(an_array[5]["name"]);
+    //     console.log(template(an_array));
+    // }
 });

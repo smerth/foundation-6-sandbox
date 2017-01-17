@@ -1,7 +1,7 @@
 ---
-chapter: ''
-topic: ''
-demonstrates: ''
+chapter: Data
+topic: JSON from a local file
+demonstrates: 'Panini looks for json or yaml data in the data folder and makes it available to the templates as variables.'
 details: ''
 ---
 
@@ -11,13 +11,13 @@ details: ''
 
 {{#markdown }}
 
-### Data
+## Data
 
 The datafile is placed in the data folder (in this case ```hsk-data.json```) It has the following structure.
 
 ```json
 {
-    "words": [
+    "word-list": [
         {
             "word": {
                 "title": "\u505a\u4e3b",
@@ -45,34 +45,33 @@ The data is accessed through variables made available by Panini auto-magically. 
 
 
 ```html
-<ol>
-\{{#each hsk-data.words}}
-  <li>\{{ this.word.title }}</li>
-\{{/each}}
-</ol>
+<h2>Here are some words</h2>
+<dl id="hsk-definition-list-example-1">
+    \{{#each hsk-level-1.word-list}}
+    <div class="hsk-item">
+        <dt lang="zh-Hans"><span class="hsk-word">\{{ this.word.title }}</span> <span class="hsk-pronounciation">\({{ this.word.pron }})</span></dt>
+        <dd>\{{ this.word.def}}</dd>
+    </div>
+    \{{/each}}
+</dl>
 ```
 
 {{/markdown }}
 </div>
-	</div>
-
-<div class="columns small-12 medium-4">
-<div class="callout success">
-
-<h2>Here are some words</h2>
-
-<dl id="hsk-definition-list-example-1">
-{{#each hsk-level-1.word-list}}
-<div class="hsk-item">
-  <dt lang="zh-Hans"><span class="hsk-word">{{ this.word.title }}</span> <span class="hsk-pronounciation">({{ this.word.pron }})</span></dt>
-  <dd>{{ this.word.def}}</dd>
-  </div>
-{{/each}}
-</dl>
-
-</div>
 </div>
 
+    <div class="columns small-12 medium-4">
+        <div class="callout success">
+            <h2>Here are some words</h2>
+            <dl id="hsk-definition-list-example-1">
+                {{#each hsk-level-1.word-list}}
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">{{ this.word.title }}</span> <span class="hsk-pronounciation">({{ this.word.pron }})</span></dt>
+                    <dd>{{ this.word.def}}</dd>
+                </div>
+                {{/each}}
+            </dl>
+        </div>
+    </div>
 
-	
 </div>
