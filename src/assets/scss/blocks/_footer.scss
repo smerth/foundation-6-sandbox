@@ -1,11 +1,13 @@
+$footer-menubar-bkg: $red;
+
 footer {
-    a,
-    p {
-        font-size: 0.8em;
-    }
+    // a,
+    // p {
+    //     font-size: 0.8em;
+    // }
     .footer-menu-bar {
         color: $white;
-        background-color: $violet;
+        background-color: $footer-menubar-bkg;
         a,
         p {
             color: $white;

@@ -3,6 +3,11 @@
 @import 'blocks/colors';
 @import 'foundation';
 @import 'motion-ui';
+
+// iconography
+@import "blocks/foundation-icons.scss";
+
+
 @include add-foundation-colors;
 @include foundation-global-styles;
 // @include foundation-grid;

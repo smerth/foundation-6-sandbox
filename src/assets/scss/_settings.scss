@@ -47,8 +47,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: ( 
-    primary: $violet, 
-    secondary: #b9d3ee, 
+    primary: $red, 
+    secondary: $white, 
     success: #3adb76, 
     warning: #ffae00, 
     alert: #ec5840, );
@@ -221,8 +221,8 @@ $closebutton-offset-horizontal: 1rem;
 $closebutton-offset-vertical: 0rem;
 $closebutton-size: 2em;
 $closebutton-lineheight: 1;
-$closebutton-color: $violet;
-$closebutton-color-hover: $black;
+$closebutton-color: $white;
+$closebutton-color-hover: $light-gray;
 // 15. Drilldown
 // -------------
 $drilldown-transition: transform 0.15s linear;
@@ -317,14 +317,14 @@ $meter-fill-bad: $alert-color;
 // 24. Off-canvas
 // --------------
 $offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-background: $red;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
-$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+$maincontent-shadow: 0 0 10px rgba(black, 0.5);
 // 25. Orbit
 // ---------
 $orbit-bullet-background: $medium-gray;
@@ -455,8 +455,8 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 $topbar-padding: 0.5rem;
-$topbar-background: $violet;
-$topbar-submenu-background: $violet;
+$topbar-background: $black;
+$topbar-submenu-background: $dark-gray;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

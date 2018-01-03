@@ -1,0 +1,156 @@
+---
+chapter: JSON
+topic: JSON Formatting and Panini
+demonstrates: ''
+details: ''
+---
+
+<div class="columns small-12">
+    <div><h1>Demo 1 - Access a simple array</h2></div>
+	<div class="callout success">
+		
+		{{#each test-1}}
+        <h2>{{title}}</h2>
+        <h3>{{artist}}</h3>
+        <ol>
+            {{#each musicians}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ol>
+        {{/each}}
+	</div>
+
+
+<div>
+{{#markdown}}
+
+## json
+```json
+{
+    "song": {
+        "title": "Song 1",
+        "artist": "Artist 1",
+        "musicians": [
+            "Musician 1", "Musician 2"
+        ]
+    }
+}
+```
+
+## Markup
+
+```html
+<div class="columns small-12">
+	<div class="callout success">
+		<h1>Demo 1</h1>
+		\{{#each test-1}}
+        <h2>\{{title}}</h2>
+        <h3>\{{artist}}</h3>
+        <ol>
+            \{{#each musicians}}
+            <li>\{{this}}</li>
+            \{{/each}}
+        </ol>
+        \{{/each}}
+	</div>
+</div>    
+```
+
+{{/markdown}}
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="columns small-12">
+    <div><h1>Demo 2 - Access an array of objects.</h1></div>
+	<div class="callout success">
+        <nav>
+            {{#each test-2}}
+            <h1>{{header}}</h1>
+            <ol>
+                {{#each items}}
+                <li id="{{id}}">
+                    {{label}}
+                </li>
+                {{/each}}
+            </ol>
+            {{/each}}
+        </nav>
+	</div>
+<div>
+{{#markdown}}
+
+## json
+```json
+[
+    {
+        "header": "File",
+        "items": [
+            {
+                "id": "Open",
+                "label": "Open"
+            },
+            {
+                "id": "New",
+                "label": "New"
+            },
+            {
+                "id": "Close",
+                "label": "Close"
+            }
+        ]
+    },
+    {
+        "header": "View",
+        "items": [
+            {
+                "id": "ZoomIn",
+                "label": "Zoom In"
+            },
+            {
+                "id": "ZoomOut",
+                "label": "Zoom Out"
+            },
+            {
+                "id": "OriginalView",
+                "label": "Original View"
+            }
+        ]
+    }
+]
+```
+
+## Markup
+
+```html
+<div class="columns small-12">
+    <div><h1>Demo 2</h1></div>
+	<div class="callout success">
+        <nav>
+            \{{#each test-2}}
+            <h1>\{{header}}</h1>
+            <ol>
+                \{{#each items}}
+                <li id="\{{id}}">
+                    \{{label}}
+                </li>
+                \{{/each}}
+            </ol>
+            \{{/each}}
+        </nav>
+	</div>
+<div>   
+```
+
+{{/markdown}}
+</div>
+</div>

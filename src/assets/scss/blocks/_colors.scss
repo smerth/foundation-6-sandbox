@@ -1,10 +1,11 @@
 // Topbar menu
 .top-bar {
     a {
-        color: lighten($violet, 40%);
+        color: $white;
     }
     a:hover {
         color: $white;
+        text-decoration: underline;
     }
 }
 

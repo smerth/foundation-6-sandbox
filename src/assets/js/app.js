@@ -4,7 +4,7 @@ $(document).foundation();
 // Add active class to to any li containing an anchor href that matches the current page.
 // ********************************
 $(document).ready(function() {
-    var links = $('#main-menu a'),
+    var links = $('.menu a'),
         current = window.location.pathname.split('/').slice(-1)[0];
 
     for (var i = 0; i < links.length; i++) {
