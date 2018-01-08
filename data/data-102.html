@@ -1,0 +1,1121 @@
+<!-- This is the base layout for your project, and will be used on every page. -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Offcanvas Menu -->
+                <ul class="vertical menu"
+                    data-accordion-menu=""
+                    id="main-menu">
+                  <li>
+                    <a class="menu-text"
+                       href="../index.html">Home</a>
+                  </li>
+                  <li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../cards/cards-material-design.html">Cards - Material Design</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-products.html">Cards - Products</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-characters.html">Cards - Chinese Characters</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../data.html">Data</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../data/data-101.html">Panini - Front Matter</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-102.html">Panini - JSON file</a>
+                        </li>
+                        <li>
+                          <a href="../data/panini-hsk-level-1.html">Panini - JSON file (HSK)</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-103.html">JSON - Github AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-104.html">JSON - Drupal AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-105.html">Handlebars - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-106.html">Handlebars - Github JSON &amp; AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-107.html">Handlebars - Github JSON &amp; jQuery</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-github-key-value-pairs.html">Github Key Value Pairs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../equal.html">Equalizer</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../equalizer/equalizer.html">Equalizer</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../flip.html">Flip Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../flip-cards/jquery-flip-simple.html">jQuery Flip - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/jquery-flip-chinese-cards.html">jQuery Flip Chinese Cards</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/flippant-basic.html">Flippant - Basic</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../grid.html">Grid</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../grid/grid-basic.html">Basic Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-block.html">Block Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-nested.html">Nested Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-source-order.html">Source Order</a>
+                        </li>
+                        <!--<li><a href="../grid/grid-tutorial-page.html">Demo Page</a></li>-->
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../extras.html">Isotope</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../isotope/isotope-layout.html">Isotope Layout</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-margin.html">Isotope Layout Margin</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-responsive.html">Isotope Layout Responsive</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../layouts.html">Layouts</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../layout-demos/topbar.html">Topbar</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/topbar-responsive.html">Topbar Responsive</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/os-l-r-menu.html">Offscreen L &amp; R Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../images.html">Media</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../media/interchange.html">Interchange Image Swapping</a>
+                        </li>
+                        <li>
+                          <a href="../media/magnific.html">Magnific Lightbox</a>
+                        </li>
+                        <li>
+                          <a href="../media/orbit.html">Orbit Image Carousel</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-gallery.html">Photoswipe Gallery</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-link.html">Photoswipe Link</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../Visibility.html">Modals, Popups &amp; Tooltips</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../visibility/drop.html">Drop</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/tooltip.html">Tooltip</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/reveal.html">Reveal - Modal</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/visibility.html">Visibility</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../panini.html">Panini</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../panini/panini-layouts-partials.html">Layouts &amp; Partials</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-page-variables.html">Page Variables</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-markdown.html">Markdown Filter</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-helpers.html">Panini Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-custom-helpers.html">Custom Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-handlebars-helpers.html">Handlebars Helpers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../templates.html">Templates</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../templates/agency.html">Agency</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog-simple.html">Blog Simple</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog.html">Blog</a>
+                        </li>
+                        <li>
+                          <a href="../templates/ecommerce.html">eCommerce</a>
+                        </li>
+                        <li>
+                          <a href="../templates/news-magazine.html">News Magazine</a>
+                        </li>
+                        <li>
+                          <a href="../templates/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="../templates/product-page.html">Product Page</a>
+                        </li>
+                        <li>
+                          <a href="../templates/real-estate.html">Real Estate</a>
+                        </li>
+                        <li>
+                          <a href="../templates/hotel-landing-page.html">Hotel Landing Page</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../toggler.html">Toggler</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../toggler/toggler-demo.html">Toggler</a>
+                        </li>
+                        <li>
+                          <a href="../toggler/toggler-character-cards.html">Toggler - Character Cards</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../components.html">Typography</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../typography/typography.html">Typography</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Foundation Icons</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Other Icons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Forms</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../info/contact.html">Contact Form</a>
+                        </li>
+                        <li>
+                          <a href="../info/login.html">Login Form</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Page content -->
+                <!-- Shows Off-screen menu hamburger and top-bar on small screens -->
+                <div id="top-bar" class="top-bar show-for-small-only">
+                    <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                        </li>
+                        <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                        <!--<li class="has-submenu">
+                            <a href="#">Dropdown item</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Dropdown One</a></li>
+                                <li><a href="#">Dropdown Two</a></li>
+                                <li><a href="#">Dropdown Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item Two</a></li>-->
+                        <li><a href="../info/contact.html">Contact</a></li>
+                        <li><a href="../info/login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="top-bar show-for-medium">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                            </li>
+                            <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                            <!--<li class="has-submenu">
+                                <a href="#">Dropdown item</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    <li><a href="#">Dropdown One</a></li>
+                                    <li><a href="#">Dropdown Two</a></li>
+                                    <li><a href="#">Dropdown Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item Two</a></li>-->
+                            <li><a href="../info/contact.html">Contact</a></li>
+                            <li><a href="../info/login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created by panini. -->
+    <div class="info-panel columns large-12">
+        <div class="row callout">
+            <div class="large-12  columns">
+                <h3><i class="fi-check"></i> Data:  <small>JSON from a local file</small></h3>
+                <h5>Demonstrates:  <span class="subheader">Panini looks for json or yaml data in the data folder and makes it available to the templates as variables.</span></h5>
+                <h5>Corresponding Filename: <span class="subheader">data-102</span></h5>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+	<div class="columns small-12 medium-8">
+        <div class="callout">
+
+<h2 id="data">Data</h2>
+<p>The datafile is placed in the data folder (in this case <code>hsk-data.json</code>) It has the following structure.</p>
+<pre><code class="lang-json">{
+    &quot;word-list&quot;: [
+        {
+            &quot;word&quot;: {
+                &quot;title&quot;: &quot;\u505a\u4e3b&quot;,
+                &quot;field_definition&quot;: &quot;make the decision; take charge of; back up; support; be host&quot;,
+                &quot;field_word_pronunciation&quot;: &quot;zuo4 zhu3&quot;
+            }
+        },
+        {
+            &quot;word&quot;: {
+                &quot;title&quot;: &quot;\u5ea7\u53f3\u94ed&quot;,
+                &quot;field_definition&quot;: &quot;motto; maxim&quot;,
+                &quot;field_word_pronunciation&quot;: &quot;zuo4 you4 ming2&quot;
+            }
+        }
+    ]
+}
+</code></pre>
+<h3 id="template">Template</h3>
+<p>The data is accessed through variables made available by Panini auto-magically.  To drilldown into the data you use dot notation.  <code>filename.array</code> gets you into the data set. <code>this.word.title</code> gets you to the data-item you need.</p>
+<pre><code class="lang-html">&lt;h2&gt;Here are some words&lt;/h2&gt;
+&lt;dl id=&quot;hsk-definition-list-example-1&quot;&gt;
+    {{#each hsk-level-1.word-list}}
+    &lt;div class=&quot;hsk-item&quot;&gt;
+        &lt;dt lang=&quot;zh-Hans&quot;&gt;&lt;span class=&quot;hsk-word&quot;&gt;{{ this.word.title }}&lt;/span&gt; &lt;span class=&quot;hsk-pronounciation&quot;&gt;\()&lt;/span&gt;&lt;/dt&gt;
+        &lt;dd&gt;{{ this.word.def}}&lt;/dd&gt;
+    &lt;/div&gt;
+    {{/each}}
+&lt;/dl&gt;
+</code></pre>
+</div>
+</div>
+
+    <div class="columns small-12 medium-4">
+        <div class="callout success">
+            <h2>Here are some words</h2>
+            <dl id="hsk-definition-list-example-1">
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">爱</span> <span class="hsk-pronounciation">(ai4)</span></dt>
+                    <dd>to love; affection; to be fond of; to like</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">八</span> <span class="hsk-pronounciation">(ba1)</span></dt>
+                    <dd>eight; 8</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">爸爸</span> <span class="hsk-pronounciation">(ba4 ba5)</span></dt>
+                    <dd>(informal) father; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">杯子</span> <span class="hsk-pronounciation">(bei1 zi5)</span></dt>
+                    <dd>cup; glass; CL:個|个[ge4],支[zhi1],枝[zhi1]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">北京</span> <span class="hsk-pronounciation">(Bei3 jing1)</span></dt>
+                    <dd>Beijing, capital of People&#x27;s Republic of China; Peking; PRC government</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">本</span> <span class="hsk-pronounciation">(ben3)</span></dt>
+                    <dd>roots or stems of plants; origin; source; this; the current; root; foundation; basis; classifier for books, periodicals, files etc; originally</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">不客气</span> <span class="hsk-pronounciation">(bu2 ke4 qi5)</span></dt>
+                    <dd>you&#x27;re welcome; impolite; rude; blunt; don&#x27;t mention it</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">不</span> <span class="hsk-pronounciation">(bu4)</span></dt>
+                    <dd>(negative prefix); not; no</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">菜</span> <span class="hsk-pronounciation">(cai4)</span></dt>
+                    <dd>dish (type of food); vegetables; vegetable; cuisine; CL:盤|盘[pan2],道[dao4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">茶</span> <span class="hsk-pronounciation">(cha2)</span></dt>
+                    <dd>tea; tea plant; CL:杯[bei1],壺|壶[hu2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">吃</span> <span class="hsk-pronounciation">(chi1)</span></dt>
+                    <dd>to eat; to have one&#x27;s meal; to eradicate; to destroy; to absorb; to suffer; to exhaust</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">出租车</span> <span class="hsk-pronounciation">(chu1 zu1 che1)</span></dt>
+                    <dd>taxi</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">打电话</span> <span class="hsk-pronounciation">(da3 dian4 hua4)</span></dt>
+                    <dd>to make a telephone call</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">大</span> <span class="hsk-pronounciation">(da4)</span></dt>
+                    <dd>big; huge; large; major; great; wide; deep; oldest; eldest</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">的</span> <span class="hsk-pronounciation">(de5)</span></dt>
+                    <dd>of; structural particle: used before a noun, linking it to preceding possessive or descriptive attributive</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">点</span> <span class="hsk-pronounciation">(dian3)</span></dt>
+                    <dd>drop (of liquid); stain; spot; speck; jot; dot stroke (in Chinese characters); decimal point; point; mark (of degree or level); a place (with certain characteristics); iron bell; o’clock; a little; a bit; some; (point) unit of measurement for type; to touch on briefly; to make clear; to light; to ignite; to kindle; period of time at night (24 minutes) (old); a drip; to dibble; classifier for small indeterminate quantities</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">电脑</span> <span class="hsk-pronounciation">(dian4 nao3)</span></dt>
+                    <dd>computer; CL:臺|台[tai2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">电视</span> <span class="hsk-pronounciation">(dian4 shi4)</span></dt>
+                    <dd>television; TV; CL:臺|台[tai2],個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">电影</span> <span class="hsk-pronounciation">(dian4 ying3)</span></dt>
+                    <dd>movie; film; CL:部[bu4],片[pian4],幕[mu4],場|场[chang3]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">东西</span> <span class="hsk-pronounciation">(dong1 xi5)</span></dt>
+                    <dd>thing; stuff; person; CL:個|个[ge4],件[jian4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">都</span> <span class="hsk-pronounciation">(dou1)</span></dt>
+                    <dd>all, both; entirely (due to) each; even; already</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">读</span> <span class="hsk-pronounciation">(du2)</span></dt>
+                    <dd>to read; to study; reading of word (i.e. pronunciation), similar to 拼音[pin1 yin1]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">对不起</span> <span class="hsk-pronounciation">(dui4 bu5 qi3)</span></dt>
+                    <dd>unworthy; to let down; I&#x27;m sorry; excuse me; pardon me; if you please; sorry? (please repeat)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">多</span> <span class="hsk-pronounciation">(duo1)</span></dt>
+                    <dd>many; much; a lot of; numerous; multi-</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">多少</span> <span class="hsk-pronounciation">(duo1 shao3)</span></dt>
+                    <dd>number; amount; somewhat</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">儿子</span> <span class="hsk-pronounciation">(er2 zi5)</span></dt>
+                    <dd>son</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">二</span> <span class="hsk-pronounciation">(er4)</span></dt>
+                    <dd>two; 2; stupid (Beijing dialect)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">饭馆</span> <span class="hsk-pronounciation">(fan4 guan3)</span></dt>
+                    <dd>restaurant; CL:家[jia1]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">飞机</span> <span class="hsk-pronounciation">(fei1 ji1)</span></dt>
+                    <dd>airplane; CL: 架[jia4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">分钟</span> <span class="hsk-pronounciation">(fen1 zhong1)</span></dt>
+                    <dd>minute</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">高兴</span> <span class="hsk-pronounciation">(gao1 xing4)</span></dt>
+                    <dd>happy; glad; willing (to do sth); in a cheerful mood</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">个</span> <span class="hsk-pronounciation">(ge4)</span></dt>
+                    <dd>individual; this; that; size; classifier for people or objects in general</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">工作</span> <span class="hsk-pronounciation">(gong1 zuo4)</span></dt>
+                    <dd>public park; CL:場|场[chang3]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">狗</span> <span class="hsk-pronounciation">(gou3)</span></dt>
+                    <dd>dog; CL:隻|只[zhi1],條|条[tiao2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">汉语</span> <span class="hsk-pronounciation">(Han4 yu3)</span></dt>
+                    <dd>Chinese language; CL:門|门[men2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">好</span> <span class="hsk-pronounciation">(hao3)</span></dt>
+                    <dd>good; well; proper; good to; easy to; very; so; (suffix indicating completion or readiness)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">喝</span> <span class="hsk-pronounciation">(he1)</span></dt>
+                    <dd>to drink; to shout (a command); My goodness!</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">和</span> <span class="hsk-pronounciation">(he2)</span></dt>
+                    <dd>and; together with; with; sum; union; peace; harmony; surname He; Japanese related; Taiwan pr.  han4</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">很</span> <span class="hsk-pronounciation">(hen3)</span></dt>
+                    <dd>(adverb of degree); quite; very; awfully</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">后面</span> <span class="hsk-pronounciation">(hou4 mian5)</span></dt>
+                    <dd>rear; back; behind; later; afterwards</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">回</span> <span class="hsk-pronounciation">(hui2)</span></dt>
+                    <dd>to circle; to go back; to turn around; to answer; to return; to revolve; Hui ethnic group (Chinese Muslims); time; classifier for acts of a play; section or chapter (of a classic book)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">会</span> <span class="hsk-pronounciation">(hui4)</span></dt>
+                    <dd>can; be possible; be able to; will; be likely to; be sure to; to assemble; to meet; to gather; to see; union; group; association; CL:個|个[ge4]; a moment (Taiwan pr. for this sense is hui3)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">火车站</span> <span class="hsk-pronounciation">(huo3 che1 zhan4)</span></dt>
+                    <dd>train station</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">几</span> <span class="hsk-pronounciation">(ji3)</span></dt>
+                    <dd>how much; how many; several; a few</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">家</span> <span class="hsk-pronounciation">(jia1)</span></dt>
+                    <dd>home; family; classifier for families or businesses; refers to the philosophical schools of pre-Han China; noun suffix for specialists in some activity such as musician or revolutionary, corresponds to English -ist, -er, -ary or -ian; surname Jia; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">叫</span> <span class="hsk-pronounciation">(jiao4)</span></dt>
+                    <dd>to shout; to call; to order; to ask; to be called; by (indicates agent in the passive mood)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">今天</span> <span class="hsk-pronounciation">(jin1 tian1)</span></dt>
+                    <dd>today; at the present; now</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">九</span> <span class="hsk-pronounciation">(jiu3)</span></dt>
+                    <dd>nine; 9</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">开</span> <span class="hsk-pronounciation">(kai1)</span></dt>
+                    <dd>to open; to start; to turn on; to boil; to write out (a medical prescription); to operate (vehicle); abbr. for 開爾文|开尔文 degrees Kelvin</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">看</span> <span class="hsk-pronounciation">(kan4)</span></dt>
+                    <dd>to see; to look at; to read; to watch; to consider; to regard as; to view as; to treat as; to judge; (after repeated verb) to give it a try; depending on (how you&#x27;re judging); to visit; to call on; to treat (an illness); to look after; Watch out! (for a danger)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">看见</span> <span class="hsk-pronounciation">(kan4 jian4)</span></dt>
+                    <dd>to see; to catch sight of</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">块</span> <span class="hsk-pronounciation">(kuai4)</span></dt>
+                    <dd>lump (of earth); chunk; piece; classifier for pieces of cloth, cake, soap etc; colloquial word for yuan (or other unit of currency such as Hong Kong or US dollar etc), usually as 塊錢|块钱</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">来</span> <span class="hsk-pronounciation">(lai2)</span></dt>
+                    <dd>to come; to arrive; to come round; ever since; next</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">老师</span> <span class="hsk-pronounciation">(lao3 shi1)</span></dt>
+                    <dd>teacher; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">了</span> <span class="hsk-pronounciation">(le5)</span></dt>
+                    <dd>(modal particle intensifying preceding clause); (completed action marker)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">冷</span> <span class="hsk-pronounciation">(leng3)</span></dt>
+                    <dd>cold</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">里</span> <span class="hsk-pronounciation">(li3)</span></dt>
+                    <dd>lining; interior; inside; internal; also written 裡|里 [li3]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">零</span> <span class="hsk-pronounciation">(ling2)</span></dt>
+                    <dd>zero; nought; zero sign; fractional; fragmentary; odd (of numbers); (placed between two numbers to indicate a smaller quantity followed by a larger one); fraction; (in mathematics) remainder (after division); extra; to wither and fall; to wither</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">六</span> <span class="hsk-pronounciation">(liu4)</span></dt>
+                    <dd>six; 6</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">妈妈</span> <span class="hsk-pronounciation">(ma1 ma5)</span></dt>
+                    <dd>mama; mommy; mother; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">吗</span> <span class="hsk-pronounciation">(ma5)</span></dt>
+                    <dd>(question tag)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">买</span> <span class="hsk-pronounciation">(mai3)</span></dt>
+                    <dd>to buy; to purchase</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">猫</span> <span class="hsk-pronounciation">(mao1)</span></dt>
+                    <dd>cat; CL:隻|只[zhi1]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">没</span> <span class="hsk-pronounciation">(mei2)</span></dt>
+                    <dd>(negative prefix for verbs); have not; not</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">没关系</span> <span class="hsk-pronounciation">(mei2 guan1 xi5)</span></dt>
+                    <dd>it doesn&#x27;t matter</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">米饭</span> <span class="hsk-pronounciation">(mi3 fan4)</span></dt>
+                    <dd>(cooked) rice</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">明天</span> <span class="hsk-pronounciation">(ming2 tian1)</span></dt>
+                    <dd>tomorrow</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">名字</span> <span class="hsk-pronounciation">(ming2 zi5)</span></dt>
+                    <dd>name (of a person or thing); CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">哪</span> <span class="hsk-pronounciation">(na3)</span></dt>
+                    <dd>how; which</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">哪儿</span> <span class="hsk-pronounciation">(na3 r5)</span></dt>
+                    <dd>where?; wherever; anywhere</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">那</span> <span class="hsk-pronounciation">(na4)</span></dt>
+                    <dd>that; those; then (in that case); commonly pr. nei4 before a classifier, esp. in Beijing</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">那儿</span> <span class="hsk-pronounciation">(na4 r5)</span></dt>
+                    <dd>there</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">呢</span> <span class="hsk-pronounciation">(ne5)</span></dt>
+                    <dd>(question particle for subjects already mentioned)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">能</span> <span class="hsk-pronounciation">(neng2)</span></dt>
+                    <dd>to be able to; to be capable of; ability; capability; able; capable; can possibly; (usually used in the negative) to have the possibility of</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">你</span> <span class="hsk-pronounciation">(ni3)</span></dt>
+                    <dd>you (informal, as opposed to polite 您[nin2])</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">年</span> <span class="hsk-pronounciation">(nian2)</span></dt>
+                    <dd>year; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">女儿</span> <span class="hsk-pronounciation">(nv3 er2)</span></dt>
+                    <dd>daughter</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">朋友</span> <span class="hsk-pronounciation">(peng2 you5)</span></dt>
+                    <dd>friend; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">漂亮</span> <span class="hsk-pronounciation">(piao4 liang5)</span></dt>
+                    <dd>pretty; beautiful</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">苹果</span> <span class="hsk-pronounciation">(ping2 guo3)</span></dt>
+                    <dd>apple; CL:個|个[ge4],顆|颗[ke1]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">七</span> <span class="hsk-pronounciation">(qi1)</span></dt>
+                    <dd>seven; 7</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">钱</span> <span class="hsk-pronounciation">(qian2)</span></dt>
+                    <dd>coin; money; CL:筆|笔[bi3]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">前面</span> <span class="hsk-pronounciation">(qian2 mian4)</span></dt>
+                    <dd>ahead; in front; preceding; above</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">请</span> <span class="hsk-pronounciation">(qing3)</span></dt>
+                    <dd>to ask; to invite; please (do sth); to treat (to a meal etc); to request</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">去</span> <span class="hsk-pronounciation">(qu4)</span></dt>
+                    <dd>to go; to go to (a place); to cause to go or send (sb); to remove; to get rid of; (when used either before or after a verb) to go in order to do sth; to be apart from in space or time; (after a verb of motion indicates movement away from the speaker); (used after certain verbs to indicate detachment or separation); (of a time or an event etc) just passed or elapsed</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">热</span> <span class="hsk-pronounciation">(re4)</span></dt>
+                    <dd>heat; to heat up; fervent; hot (of weather); warm up</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">人</span> <span class="hsk-pronounciation">(ren2)</span></dt>
+                    <dd>man; person; people; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">认识</span> <span class="hsk-pronounciation">(ren4 shi5)</span></dt>
+                    <dd>to know; to recognize; to be familiar with; acquainted with sth; knowledge; understanding; awareness; cognition</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">日</span> <span class="hsk-pronounciation">(ri4)</span></dt>
+                    <dd>sun; day; date, day of the month; abbr. for 日本|日本 Japan</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">三</span> <span class="hsk-pronounciation">(san1)</span></dt>
+                    <dd>three; 3</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">商店</span> <span class="hsk-pronounciation">(shang1 dian4)</span></dt>
+                    <dd>store; shop; CL:家[jia1],個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">上</span> <span class="hsk-pronounciation">(shang4)</span></dt>
+                    <dd>on; on top; upon; first (of multiple parts); previous; last; upper; higher; above; to climb; to go into; to go up; to attend (class or university)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">上午</span> <span class="hsk-pronounciation">(shang4 wu3)</span></dt>
+                    <dd>morning; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">少</span> <span class="hsk-pronounciation">(shao3)</span></dt>
+                    <dd>few; little; lack</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">谁</span> <span class="hsk-pronounciation">(shei2)</span></dt>
+                    <dd>who; also pronounced shui2</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">什么</span> <span class="hsk-pronounciation">(shen2 me5)</span></dt>
+                    <dd>what?; who?; something; anything</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">十</span> <span class="hsk-pronounciation">(shi2)</span></dt>
+                    <dd>ten; 10</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">时候</span> <span class="hsk-pronounciation">(shi2 hou5)</span></dt>
+                    <dd>time; length of time; moment; period</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">是</span> <span class="hsk-pronounciation">(shi4)</span></dt>
+                    <dd>is; are; am; yes; to be</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">书</span> <span class="hsk-pronounciation">(shu1)</span></dt>
+                    <dd>book; letter; CL:本[ben3],冊|册[ce4],部[bu4]; see also 書經|书经 Book of History</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">水</span> <span class="hsk-pronounciation">(shui3)</span></dt>
+                    <dd>water; river; liquid; beverage; additional charges or income; (of clothes) classifier for number of washes</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">水果</span> <span class="hsk-pronounciation">(shui3 guo3)</span></dt>
+                    <dd>fruit; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">睡觉</span> <span class="hsk-pronounciation">(shui4 jiao4)</span></dt>
+                    <dd>to go to bed; to go to sleep</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">说话</span> <span class="hsk-pronounciation">(shuo1 hua4)</span></dt>
+                    <dd>to speak; to say; to talk; to gossip; to tell stories; talk; word</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">四</span> <span class="hsk-pronounciation">(si4)</span></dt>
+                    <dd>four; 4</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">岁</span> <span class="hsk-pronounciation">(sui4)</span></dt>
+                    <dd>classifier for years (of age); year; year (of crop harvests)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">他</span> <span class="hsk-pronounciation">(ta1)</span></dt>
+                    <dd>he or him; (used for either sex when the sex is unknown or unimportant); (used before sb&#x27;s name for emphasis); (used as a meaningless mock object); other; another</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">她</span> <span class="hsk-pronounciation">(ta1)</span></dt>
+                    <dd>she</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">太</span> <span class="hsk-pronounciation">(tai4)</span></dt>
+                    <dd>highest; greatest; too (much); very; extremely</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">天气</span> <span class="hsk-pronounciation">(tian1 qi4)</span></dt>
+                    <dd>weather</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">听</span> <span class="hsk-pronounciation">(ting1)</span></dt>
+                    <dd>to listen; to hear; to obey; a can (loanword from English &quot;tin&quot;); classifier for canned beverages</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">同学</span> <span class="hsk-pronounciation">(tong2 xue2)</span></dt>
+                    <dd>(fellow) classmate; CL:位[wei4],個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">喂</span> <span class="hsk-pronounciation">(wei4)</span></dt>
+                    <dd>hello (interj., esp. on telephone); hey; to feed (sb or some animal)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">我</span> <span class="hsk-pronounciation">(wo3)</span></dt>
+                    <dd>I; me; my</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">我们</span> <span class="hsk-pronounciation">(wo3 men5)</span></dt>
+                    <dd>we; us; ourselves; our</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">五</span> <span class="hsk-pronounciation">(wu3)</span></dt>
+                    <dd>five; 5</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">喜欢</span> <span class="hsk-pronounciation">(xi3 huan5)</span></dt>
+                    <dd>to like; to be fond of</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">下</span> <span class="hsk-pronounciation">(xia4)</span></dt>
+                    <dd>down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">下午</span> <span class="hsk-pronounciation">(xia4 wu3)</span></dt>
+                    <dd>afternoon; p.m.; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">下雨</span> <span class="hsk-pronounciation">(xia4 yu3)</span></dt>
+                    <dd>to rain; rainy</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">先生</span> <span class="hsk-pronounciation">(xian1 sheng5)</span></dt>
+                    <dd>teacher; Mister (Mr.); husband; doctor (topolect); CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">现在</span> <span class="hsk-pronounciation">(xian4 zai4)</span></dt>
+                    <dd>now; at present; at the moment; modern; current; nowadays</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">想</span> <span class="hsk-pronounciation">(xiang3)</span></dt>
+                    <dd>to think; to believe; to suppose; to wish; to want; to miss</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">小</span> <span class="hsk-pronounciation">(xiao3)</span></dt>
+                    <dd>small; tiny; few; young</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">小姐</span> <span class="hsk-pronounciation">(xiao3 jie5)</span></dt>
+                    <dd>young lady; miss; CL:個|个[ge4],位[wei4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">些</span> <span class="hsk-pronounciation">(xie1)</span></dt>
+                    <dd>some; few; several; (a measure word)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">写</span> <span class="hsk-pronounciation">(xie3)</span></dt>
+                    <dd>to write</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">谢谢</span> <span class="hsk-pronounciation">(xie4 xie5)</span></dt>
+                    <dd>to thank; thanks</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">星期</span> <span class="hsk-pronounciation">(xing1 qi1)</span></dt>
+                    <dd>week; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">学生</span> <span class="hsk-pronounciation">(xue2 sheng5)</span></dt>
+                    <dd>student; school child</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">学习</span> <span class="hsk-pronounciation">(xue2 xi2)</span></dt>
+                    <dd>to learn; to study</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">学校</span> <span class="hsk-pronounciation">(xue2 xiao4)</span></dt>
+                    <dd>school; CL:所[suo3]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">一</span> <span class="hsk-pronounciation">(yi1)</span></dt>
+                    <dd>one; 1; single; a (article); as soon as; entire; whole; all; throughout; &quot;one&quot; radical in Chinese characters (Kangxi radical 1)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">衣服</span> <span class="hsk-pronounciation">(yi1 fu5)</span></dt>
+                    <dd>clothes; CL:件[jian4],套[tao4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">医生</span> <span class="hsk-pronounciation">(yi1 sheng1)</span></dt>
+                    <dd>doctor; CL:個|个[ge4],位[wei4],名[ming2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">医院</span> <span class="hsk-pronounciation">(yi1 yuan4)</span></dt>
+                    <dd>hospital; CL:所[suo3],家[jia1],座[zuo4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">椅子</span> <span class="hsk-pronounciation">(yi3 zi5)</span></dt>
+                    <dd>chair; CL:把[ba3],套[tao4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">有</span> <span class="hsk-pronounciation">(you3)</span></dt>
+                    <dd>to have; there is; there are; to exist; to be</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">月</span> <span class="hsk-pronounciation">(yue4)</span></dt>
+                    <dd>moon; month; CL:個|个[ge4],輪|轮[lun2]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">在</span> <span class="hsk-pronounciation">(zai4)</span></dt>
+                    <dd>(located) at; (to be) in; to exist; in the middle of doing sth; (indicating an action in progress)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">再见</span> <span class="hsk-pronounciation">(zai4 jian4)</span></dt>
+                    <dd>goodbye; see you again later</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">怎么</span> <span class="hsk-pronounciation">(zen3 me5)</span></dt>
+                    <dd>how?; what?; why?</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">怎么样</span> <span class="hsk-pronounciation">(zen3 me5 yang4)</span></dt>
+                    <dd>how?; how about?; how was it?; how are things?</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">这</span> <span class="hsk-pronounciation">(zhe4)</span></dt>
+                    <dd>this; these; (commonly pr. zhei4 before a classifier, esp. in Beijing)</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">这儿</span> <span class="hsk-pronounciation">(zhe4 r5)</span></dt>
+                    <dd>here</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">中国</span> <span class="hsk-pronounciation">(Zhong1 guo2)</span></dt>
+                    <dd>China; Middle Kingdom</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">中午</span> <span class="hsk-pronounciation">(zhong1 wu3)</span></dt>
+                    <dd>noon; midday; CL:個|个[ge4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">住</span> <span class="hsk-pronounciation">(zhu4)</span></dt>
+                    <dd>to live; to dwell; to stay; to reside; to stop</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">桌子</span> <span class="hsk-pronounciation">(zhuo1 zi5)</span></dt>
+                    <dd>table; desk; CL:張|张[zhang1],套[tao4]</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">字</span> <span class="hsk-pronounciation">(zi4)</span></dt>
+                    <dd>letter; symbol; character; word; CL:個|个[ge4]; courtesy or style name traditionally given to males aged 20 in dynastic China</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">昨天</span> <span class="hsk-pronounciation">(zuo2 tian1)</span></dt>
+                    <dd>yesterday</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">做</span> <span class="hsk-pronounciation">(zuo4)</span></dt>
+                    <dd>to do; to make; to produce; to write; to compose; to act as; to engage in; to hold (a party); to be; to become; to function (in some capacity); to serve as; to be used for; to form (a bond or relationship); to pretend; to feign; to act a part; to put on appearance</dd>
+                </div>
+                <div class="hsk-item">
+                    <dt lang="zh-Hans"><span class="hsk-word">坐</span> <span class="hsk-pronounciation">(zuo4)</span></dt>
+                    <dd>to sit; to take a seat; to take (a bus, airplane etc); to bear fruit; surname Zuo</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+</div>
+<footer class="columns small-12 topspace">
+  <div class="row footer-menu-bar">
+    <div class="medium-6 columns">
+      <ul class="menu">
+        <li>
+          <a href="#">Legal</a>
+        </li>
+        <li>
+          <a href="#">Partner</a>
+        </li>
+        <li>
+          <a href="#">Explore</a>
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 columns">
+      <ul class="menu align-right">
+        <li class="menu-text">Copyright © 2016 Smedia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row menu-panel">
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Solar Systems</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Contact</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">
+          <i class="fi-social-twitter"></i>Twitter</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-facebook"></i>Facebook</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-instagram"></i>Instagram</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-pinterest"></i>Pinterest</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row last-word">
+    <div class="large-12 columns text-center">
+      <p>Le Grande Building, Latin Quarter, Paris • 261 Rue Saint-Séverin, 75005 Paris, France</p>
+      <p>Phone 01 42 517 85 • info@test.com • www.github.com/smerth/foundation-6-sandbox.com</p>
+    </div>
+  </div>
+</footer>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/app.js"></script>
+   
+    <!-- This quick fix for adding js on a per page basis would require taking js/page/* out of the js processing in the gulp file -->
+    <!-- 
+<script src="../assets/js/data-102/page.js"></script>
+ -->
+</body>
+
+</html>

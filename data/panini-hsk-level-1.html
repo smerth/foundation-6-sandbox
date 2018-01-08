@@ -1,0 +1,2758 @@
+<!-- This is the base layout for your project, and will be used on every page. -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Offcanvas Menu -->
+                <ul class="vertical menu"
+                    data-accordion-menu=""
+                    id="main-menu">
+                  <li>
+                    <a class="menu-text"
+                       href="../index.html">Home</a>
+                  </li>
+                  <li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../cards/cards-material-design.html">Cards - Material Design</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-products.html">Cards - Products</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-characters.html">Cards - Chinese Characters</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../data.html">Data</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../data/data-101.html">Panini - Front Matter</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-102.html">Panini - JSON file</a>
+                        </li>
+                        <li>
+                          <a href="../data/panini-hsk-level-1.html">Panini - JSON file (HSK)</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-103.html">JSON - Github AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-104.html">JSON - Drupal AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-105.html">Handlebars - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-106.html">Handlebars - Github JSON &amp; AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-107.html">Handlebars - Github JSON &amp; jQuery</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-github-key-value-pairs.html">Github Key Value Pairs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../equal.html">Equalizer</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../equalizer/equalizer.html">Equalizer</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../flip.html">Flip Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../flip-cards/jquery-flip-simple.html">jQuery Flip - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/jquery-flip-chinese-cards.html">jQuery Flip Chinese Cards</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/flippant-basic.html">Flippant - Basic</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../grid.html">Grid</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../grid/grid-basic.html">Basic Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-block.html">Block Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-nested.html">Nested Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-source-order.html">Source Order</a>
+                        </li>
+                        <!--<li><a href="../grid/grid-tutorial-page.html">Demo Page</a></li>-->
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../extras.html">Isotope</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../isotope/isotope-layout.html">Isotope Layout</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-margin.html">Isotope Layout Margin</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-responsive.html">Isotope Layout Responsive</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../layouts.html">Layouts</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../layout-demos/topbar.html">Topbar</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/topbar-responsive.html">Topbar Responsive</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/os-l-r-menu.html">Offscreen L &amp; R Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../images.html">Media</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../media/interchange.html">Interchange Image Swapping</a>
+                        </li>
+                        <li>
+                          <a href="../media/magnific.html">Magnific Lightbox</a>
+                        </li>
+                        <li>
+                          <a href="../media/orbit.html">Orbit Image Carousel</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-gallery.html">Photoswipe Gallery</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-link.html">Photoswipe Link</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../Visibility.html">Modals, Popups &amp; Tooltips</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../visibility/drop.html">Drop</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/tooltip.html">Tooltip</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/reveal.html">Reveal - Modal</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/visibility.html">Visibility</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../panini.html">Panini</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../panini/panini-layouts-partials.html">Layouts &amp; Partials</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-page-variables.html">Page Variables</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-markdown.html">Markdown Filter</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-helpers.html">Panini Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-custom-helpers.html">Custom Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-handlebars-helpers.html">Handlebars Helpers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../templates.html">Templates</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../templates/agency.html">Agency</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog-simple.html">Blog Simple</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog.html">Blog</a>
+                        </li>
+                        <li>
+                          <a href="../templates/ecommerce.html">eCommerce</a>
+                        </li>
+                        <li>
+                          <a href="../templates/news-magazine.html">News Magazine</a>
+                        </li>
+                        <li>
+                          <a href="../templates/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="../templates/product-page.html">Product Page</a>
+                        </li>
+                        <li>
+                          <a href="../templates/real-estate.html">Real Estate</a>
+                        </li>
+                        <li>
+                          <a href="../templates/hotel-landing-page.html">Hotel Landing Page</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../toggler.html">Toggler</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../toggler/toggler-demo.html">Toggler</a>
+                        </li>
+                        <li>
+                          <a href="../toggler/toggler-character-cards.html">Toggler - Character Cards</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../components.html">Typography</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../typography/typography.html">Typography</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Foundation Icons</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Other Icons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Forms</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../info/contact.html">Contact Form</a>
+                        </li>
+                        <li>
+                          <a href="../info/login.html">Login Form</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Page content -->
+                <!-- Shows Off-screen menu hamburger and top-bar on small screens -->
+                <div id="top-bar" class="top-bar show-for-small-only">
+                    <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                        </li>
+                        <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                        <!--<li class="has-submenu">
+                            <a href="#">Dropdown item</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Dropdown One</a></li>
+                                <li><a href="#">Dropdown Two</a></li>
+                                <li><a href="#">Dropdown Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item Two</a></li>-->
+                        <li><a href="../info/contact.html">Contact</a></li>
+                        <li><a href="../info/login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="top-bar show-for-medium">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                            </li>
+                            <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                            <!--<li class="has-submenu">
+                                <a href="#">Dropdown item</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    <li><a href="#">Dropdown One</a></li>
+                                    <li><a href="#">Dropdown Two</a></li>
+                                    <li><a href="#">Dropdown Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item Two</a></li>-->
+                            <li><a href="../info/contact.html">Contact</a></li>
+                            <li><a href="../info/login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created by panini. -->
+    <div class="info-panel columns large-12">
+        <div class="row callout">
+            <div class="large-12  columns">
+                <h3><i class="fi-check"></i> Data:  </h3>
+                <h5>Corresponding Filename: <span class="subheader">panini-hsk-level-1</span></h5>
+            </div>
+        </div>
+    </div>
+
+<!-- data is brought in from hsk-level-1.json -->
+<div class="card-level-test row small-up-1 medium-up-3 topspace" data-equalizer>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">爱</div>
+                <span class="pronunciation">ai4</span>
+            </div>
+            <div class="definition">
+                <p>to love; affection; to be fond of; to like</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">八</div>
+                <span class="pronunciation">ba1</span>
+            </div>
+            <div class="definition">
+                <p>eight; 8</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">爸爸</div>
+                <span class="pronunciation">ba4 ba5</span>
+            </div>
+            <div class="definition">
+                <p>(informal) father; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">杯子</div>
+                <span class="pronunciation">bei1 zi5</span>
+            </div>
+            <div class="definition">
+                <p>cup; glass; CL:個|个[ge4],支[zhi1],枝[zhi1]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">北京</div>
+                <span class="pronunciation">Bei3 jing1</span>
+            </div>
+            <div class="definition">
+                <p>Beijing, capital of People&#x27;s Republic of China; Peking; PRC government</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">本</div>
+                <span class="pronunciation">ben3</span>
+            </div>
+            <div class="definition">
+                <p>roots or stems of plants; origin; source; this; the current; root; foundation; basis; classifier for books, periodicals, files etc; originally</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">不客气</div>
+                <span class="pronunciation">bu2 ke4 qi5</span>
+            </div>
+            <div class="definition">
+                <p>you&#x27;re welcome; impolite; rude; blunt; don&#x27;t mention it</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">不</div>
+                <span class="pronunciation">bu4</span>
+            </div>
+            <div class="definition">
+                <p>(negative prefix); not; no</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">菜</div>
+                <span class="pronunciation">cai4</span>
+            </div>
+            <div class="definition">
+                <p>dish (type of food); vegetables; vegetable; cuisine; CL:盤|盘[pan2],道[dao4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">茶</div>
+                <span class="pronunciation">cha2</span>
+            </div>
+            <div class="definition">
+                <p>tea; tea plant; CL:杯[bei1],壺|壶[hu2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">吃</div>
+                <span class="pronunciation">chi1</span>
+            </div>
+            <div class="definition">
+                <p>to eat; to have one&#x27;s meal; to eradicate; to destroy; to absorb; to suffer; to exhaust</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">出租车</div>
+                <span class="pronunciation">chu1 zu1 che1</span>
+            </div>
+            <div class="definition">
+                <p>taxi</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">打电话</div>
+                <span class="pronunciation">da3 dian4 hua4</span>
+            </div>
+            <div class="definition">
+                <p>to make a telephone call</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">大</div>
+                <span class="pronunciation">da4</span>
+            </div>
+            <div class="definition">
+                <p>big; huge; large; major; great; wide; deep; oldest; eldest</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">的</div>
+                <span class="pronunciation">de5</span>
+            </div>
+            <div class="definition">
+                <p>of; structural particle: used before a noun, linking it to preceding possessive or descriptive attributive</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">点</div>
+                <span class="pronunciation">dian3</span>
+            </div>
+            <div class="definition">
+                <p>drop (of liquid); stain; spot; speck; jot; dot stroke (in Chinese characters); decimal point; point; mark (of degree or level); a place (with certain characteristics); iron bell; o’clock; a little; a bit; some; (point) unit of measurement for type; to touch on briefly; to make clear; to light; to ignite; to kindle; period of time at night (24 minutes) (old); a drip; to dibble; classifier for small indeterminate quantities</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">电脑</div>
+                <span class="pronunciation">dian4 nao3</span>
+            </div>
+            <div class="definition">
+                <p>computer; CL:臺|台[tai2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">电视</div>
+                <span class="pronunciation">dian4 shi4</span>
+            </div>
+            <div class="definition">
+                <p>television; TV; CL:臺|台[tai2],個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">电影</div>
+                <span class="pronunciation">dian4 ying3</span>
+            </div>
+            <div class="definition">
+                <p>movie; film; CL:部[bu4],片[pian4],幕[mu4],場|场[chang3]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">东西</div>
+                <span class="pronunciation">dong1 xi5</span>
+            </div>
+            <div class="definition">
+                <p>thing; stuff; person; CL:個|个[ge4],件[jian4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">都</div>
+                <span class="pronunciation">dou1</span>
+            </div>
+            <div class="definition">
+                <p>all, both; entirely (due to) each; even; already</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">读</div>
+                <span class="pronunciation">du2</span>
+            </div>
+            <div class="definition">
+                <p>to read; to study; reading of word (i.e. pronunciation), similar to 拼音[pin1 yin1]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">对不起</div>
+                <span class="pronunciation">dui4 bu5 qi3</span>
+            </div>
+            <div class="definition">
+                <p>unworthy; to let down; I&#x27;m sorry; excuse me; pardon me; if you please; sorry? (please repeat)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">多</div>
+                <span class="pronunciation">duo1</span>
+            </div>
+            <div class="definition">
+                <p>many; much; a lot of; numerous; multi-</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">多少</div>
+                <span class="pronunciation">duo1 shao3</span>
+            </div>
+            <div class="definition">
+                <p>number; amount; somewhat</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">儿子</div>
+                <span class="pronunciation">er2 zi5</span>
+            </div>
+            <div class="definition">
+                <p>son</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">二</div>
+                <span class="pronunciation">er4</span>
+            </div>
+            <div class="definition">
+                <p>two; 2; stupid (Beijing dialect)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">饭馆</div>
+                <span class="pronunciation">fan4 guan3</span>
+            </div>
+            <div class="definition">
+                <p>restaurant; CL:家[jia1]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">飞机</div>
+                <span class="pronunciation">fei1 ji1</span>
+            </div>
+            <div class="definition">
+                <p>airplane; CL: 架[jia4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">分钟</div>
+                <span class="pronunciation">fen1 zhong1</span>
+            </div>
+            <div class="definition">
+                <p>minute</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">高兴</div>
+                <span class="pronunciation">gao1 xing4</span>
+            </div>
+            <div class="definition">
+                <p>happy; glad; willing (to do sth); in a cheerful mood</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">个</div>
+                <span class="pronunciation">ge4</span>
+            </div>
+            <div class="definition">
+                <p>individual; this; that; size; classifier for people or objects in general</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">工作</div>
+                <span class="pronunciation">gong1 zuo4</span>
+            </div>
+            <div class="definition">
+                <p>public park; CL:場|场[chang3]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">狗</div>
+                <span class="pronunciation">gou3</span>
+            </div>
+            <div class="definition">
+                <p>dog; CL:隻|只[zhi1],條|条[tiao2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">汉语</div>
+                <span class="pronunciation">Han4 yu3</span>
+            </div>
+            <div class="definition">
+                <p>Chinese language; CL:門|门[men2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">好</div>
+                <span class="pronunciation">hao3</span>
+            </div>
+            <div class="definition">
+                <p>good; well; proper; good to; easy to; very; so; (suffix indicating completion or readiness)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">喝</div>
+                <span class="pronunciation">he1</span>
+            </div>
+            <div class="definition">
+                <p>to drink; to shout (a command); My goodness!</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">和</div>
+                <span class="pronunciation">he2</span>
+            </div>
+            <div class="definition">
+                <p>and; together with; with; sum; union; peace; harmony; surname He; Japanese related; Taiwan pr.  han4</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">很</div>
+                <span class="pronunciation">hen3</span>
+            </div>
+            <div class="definition">
+                <p>(adverb of degree); quite; very; awfully</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">后面</div>
+                <span class="pronunciation">hou4 mian5</span>
+            </div>
+            <div class="definition">
+                <p>rear; back; behind; later; afterwards</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">回</div>
+                <span class="pronunciation">hui2</span>
+            </div>
+            <div class="definition">
+                <p>to circle; to go back; to turn around; to answer; to return; to revolve; Hui ethnic group (Chinese Muslims); time; classifier for acts of a play; section or chapter (of a classic book)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">会</div>
+                <span class="pronunciation">hui4</span>
+            </div>
+            <div class="definition">
+                <p>can; be possible; be able to; will; be likely to; be sure to; to assemble; to meet; to gather; to see; union; group; association; CL:個|个[ge4]; a moment (Taiwan pr. for this sense is hui3)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">火车站</div>
+                <span class="pronunciation">huo3 che1 zhan4</span>
+            </div>
+            <div class="definition">
+                <p>train station</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">几</div>
+                <span class="pronunciation">ji3</span>
+            </div>
+            <div class="definition">
+                <p>how much; how many; several; a few</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">家</div>
+                <span class="pronunciation">jia1</span>
+            </div>
+            <div class="definition">
+                <p>home; family; classifier for families or businesses; refers to the philosophical schools of pre-Han China; noun suffix for specialists in some activity such as musician or revolutionary, corresponds to English -ist, -er, -ary or -ian; surname Jia; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">叫</div>
+                <span class="pronunciation">jiao4</span>
+            </div>
+            <div class="definition">
+                <p>to shout; to call; to order; to ask; to be called; by (indicates agent in the passive mood)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">今天</div>
+                <span class="pronunciation">jin1 tian1</span>
+            </div>
+            <div class="definition">
+                <p>today; at the present; now</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">九</div>
+                <span class="pronunciation">jiu3</span>
+            </div>
+            <div class="definition">
+                <p>nine; 9</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">开</div>
+                <span class="pronunciation">kai1</span>
+            </div>
+            <div class="definition">
+                <p>to open; to start; to turn on; to boil; to write out (a medical prescription); to operate (vehicle); abbr. for 開爾文|开尔文 degrees Kelvin</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">看</div>
+                <span class="pronunciation">kan4</span>
+            </div>
+            <div class="definition">
+                <p>to see; to look at; to read; to watch; to consider; to regard as; to view as; to treat as; to judge; (after repeated verb) to give it a try; depending on (how you&#x27;re judging); to visit; to call on; to treat (an illness); to look after; Watch out! (for a danger)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">看见</div>
+                <span class="pronunciation">kan4 jian4</span>
+            </div>
+            <div class="definition">
+                <p>to see; to catch sight of</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">块</div>
+                <span class="pronunciation">kuai4</span>
+            </div>
+            <div class="definition">
+                <p>lump (of earth); chunk; piece; classifier for pieces of cloth, cake, soap etc; colloquial word for yuan (or other unit of currency such as Hong Kong or US dollar etc), usually as 塊錢|块钱</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">来</div>
+                <span class="pronunciation">lai2</span>
+            </div>
+            <div class="definition">
+                <p>to come; to arrive; to come round; ever since; next</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">老师</div>
+                <span class="pronunciation">lao3 shi1</span>
+            </div>
+            <div class="definition">
+                <p>teacher; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">了</div>
+                <span class="pronunciation">le5</span>
+            </div>
+            <div class="definition">
+                <p>(modal particle intensifying preceding clause); (completed action marker)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">冷</div>
+                <span class="pronunciation">leng3</span>
+            </div>
+            <div class="definition">
+                <p>cold</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">里</div>
+                <span class="pronunciation">li3</span>
+            </div>
+            <div class="definition">
+                <p>lining; interior; inside; internal; also written 裡|里 [li3]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">零</div>
+                <span class="pronunciation">ling2</span>
+            </div>
+            <div class="definition">
+                <p>zero; nought; zero sign; fractional; fragmentary; odd (of numbers); (placed between two numbers to indicate a smaller quantity followed by a larger one); fraction; (in mathematics) remainder (after division); extra; to wither and fall; to wither</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">六</div>
+                <span class="pronunciation">liu4</span>
+            </div>
+            <div class="definition">
+                <p>six; 6</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">妈妈</div>
+                <span class="pronunciation">ma1 ma5</span>
+            </div>
+            <div class="definition">
+                <p>mama; mommy; mother; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">吗</div>
+                <span class="pronunciation">ma5</span>
+            </div>
+            <div class="definition">
+                <p>(question tag)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">买</div>
+                <span class="pronunciation">mai3</span>
+            </div>
+            <div class="definition">
+                <p>to buy; to purchase</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">猫</div>
+                <span class="pronunciation">mao1</span>
+            </div>
+            <div class="definition">
+                <p>cat; CL:隻|只[zhi1]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">没</div>
+                <span class="pronunciation">mei2</span>
+            </div>
+            <div class="definition">
+                <p>(negative prefix for verbs); have not; not</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">没关系</div>
+                <span class="pronunciation">mei2 guan1 xi5</span>
+            </div>
+            <div class="definition">
+                <p>it doesn&#x27;t matter</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">米饭</div>
+                <span class="pronunciation">mi3 fan4</span>
+            </div>
+            <div class="definition">
+                <p>(cooked) rice</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">明天</div>
+                <span class="pronunciation">ming2 tian1</span>
+            </div>
+            <div class="definition">
+                <p>tomorrow</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">名字</div>
+                <span class="pronunciation">ming2 zi5</span>
+            </div>
+            <div class="definition">
+                <p>name (of a person or thing); CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">哪</div>
+                <span class="pronunciation">na3</span>
+            </div>
+            <div class="definition">
+                <p>how; which</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">哪儿</div>
+                <span class="pronunciation">na3 r5</span>
+            </div>
+            <div class="definition">
+                <p>where?; wherever; anywhere</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">那</div>
+                <span class="pronunciation">na4</span>
+            </div>
+            <div class="definition">
+                <p>that; those; then (in that case); commonly pr. nei4 before a classifier, esp. in Beijing</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">那儿</div>
+                <span class="pronunciation">na4 r5</span>
+            </div>
+            <div class="definition">
+                <p>there</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">呢</div>
+                <span class="pronunciation">ne5</span>
+            </div>
+            <div class="definition">
+                <p>(question particle for subjects already mentioned)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">能</div>
+                <span class="pronunciation">neng2</span>
+            </div>
+            <div class="definition">
+                <p>to be able to; to be capable of; ability; capability; able; capable; can possibly; (usually used in the negative) to have the possibility of</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">你</div>
+                <span class="pronunciation">ni3</span>
+            </div>
+            <div class="definition">
+                <p>you (informal, as opposed to polite 您[nin2])</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">年</div>
+                <span class="pronunciation">nian2</span>
+            </div>
+            <div class="definition">
+                <p>year; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">女儿</div>
+                <span class="pronunciation">nv3 er2</span>
+            </div>
+            <div class="definition">
+                <p>daughter</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">朋友</div>
+                <span class="pronunciation">peng2 you5</span>
+            </div>
+            <div class="definition">
+                <p>friend; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">漂亮</div>
+                <span class="pronunciation">piao4 liang5</span>
+            </div>
+            <div class="definition">
+                <p>pretty; beautiful</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">苹果</div>
+                <span class="pronunciation">ping2 guo3</span>
+            </div>
+            <div class="definition">
+                <p>apple; CL:個|个[ge4],顆|颗[ke1]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">七</div>
+                <span class="pronunciation">qi1</span>
+            </div>
+            <div class="definition">
+                <p>seven; 7</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">钱</div>
+                <span class="pronunciation">qian2</span>
+            </div>
+            <div class="definition">
+                <p>coin; money; CL:筆|笔[bi3]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">前面</div>
+                <span class="pronunciation">qian2 mian4</span>
+            </div>
+            <div class="definition">
+                <p>ahead; in front; preceding; above</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">请</div>
+                <span class="pronunciation">qing3</span>
+            </div>
+            <div class="definition">
+                <p>to ask; to invite; please (do sth); to treat (to a meal etc); to request</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">去</div>
+                <span class="pronunciation">qu4</span>
+            </div>
+            <div class="definition">
+                <p>to go; to go to (a place); to cause to go or send (sb); to remove; to get rid of; (when used either before or after a verb) to go in order to do sth; to be apart from in space or time; (after a verb of motion indicates movement away from the speaker); (used after certain verbs to indicate detachment or separation); (of a time or an event etc) just passed or elapsed</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">热</div>
+                <span class="pronunciation">re4</span>
+            </div>
+            <div class="definition">
+                <p>heat; to heat up; fervent; hot (of weather); warm up</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">人</div>
+                <span class="pronunciation">ren2</span>
+            </div>
+            <div class="definition">
+                <p>man; person; people; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">认识</div>
+                <span class="pronunciation">ren4 shi5</span>
+            </div>
+            <div class="definition">
+                <p>to know; to recognize; to be familiar with; acquainted with sth; knowledge; understanding; awareness; cognition</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">日</div>
+                <span class="pronunciation">ri4</span>
+            </div>
+            <div class="definition">
+                <p>sun; day; date, day of the month; abbr. for 日本|日本 Japan</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">三</div>
+                <span class="pronunciation">san1</span>
+            </div>
+            <div class="definition">
+                <p>three; 3</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">商店</div>
+                <span class="pronunciation">shang1 dian4</span>
+            </div>
+            <div class="definition">
+                <p>store; shop; CL:家[jia1],個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">上</div>
+                <span class="pronunciation">shang4</span>
+            </div>
+            <div class="definition">
+                <p>on; on top; upon; first (of multiple parts); previous; last; upper; higher; above; to climb; to go into; to go up; to attend (class or university)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">上午</div>
+                <span class="pronunciation">shang4 wu3</span>
+            </div>
+            <div class="definition">
+                <p>morning; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">少</div>
+                <span class="pronunciation">shao3</span>
+            </div>
+            <div class="definition">
+                <p>few; little; lack</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">谁</div>
+                <span class="pronunciation">shei2</span>
+            </div>
+            <div class="definition">
+                <p>who; also pronounced shui2</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">什么</div>
+                <span class="pronunciation">shen2 me5</span>
+            </div>
+            <div class="definition">
+                <p>what?; who?; something; anything</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">十</div>
+                <span class="pronunciation">shi2</span>
+            </div>
+            <div class="definition">
+                <p>ten; 10</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">时候</div>
+                <span class="pronunciation">shi2 hou5</span>
+            </div>
+            <div class="definition">
+                <p>time; length of time; moment; period</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">是</div>
+                <span class="pronunciation">shi4</span>
+            </div>
+            <div class="definition">
+                <p>is; are; am; yes; to be</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">书</div>
+                <span class="pronunciation">shu1</span>
+            </div>
+            <div class="definition">
+                <p>book; letter; CL:本[ben3],冊|册[ce4],部[bu4]; see also 書經|书经 Book of History</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">水</div>
+                <span class="pronunciation">shui3</span>
+            </div>
+            <div class="definition">
+                <p>water; river; liquid; beverage; additional charges or income; (of clothes) classifier for number of washes</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">水果</div>
+                <span class="pronunciation">shui3 guo3</span>
+            </div>
+            <div class="definition">
+                <p>fruit; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">睡觉</div>
+                <span class="pronunciation">shui4 jiao4</span>
+            </div>
+            <div class="definition">
+                <p>to go to bed; to go to sleep</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">说话</div>
+                <span class="pronunciation">shuo1 hua4</span>
+            </div>
+            <div class="definition">
+                <p>to speak; to say; to talk; to gossip; to tell stories; talk; word</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">四</div>
+                <span class="pronunciation">si4</span>
+            </div>
+            <div class="definition">
+                <p>four; 4</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">岁</div>
+                <span class="pronunciation">sui4</span>
+            </div>
+            <div class="definition">
+                <p>classifier for years (of age); year; year (of crop harvests)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">他</div>
+                <span class="pronunciation">ta1</span>
+            </div>
+            <div class="definition">
+                <p>he or him; (used for either sex when the sex is unknown or unimportant); (used before sb&#x27;s name for emphasis); (used as a meaningless mock object); other; another</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">她</div>
+                <span class="pronunciation">ta1</span>
+            </div>
+            <div class="definition">
+                <p>she</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">太</div>
+                <span class="pronunciation">tai4</span>
+            </div>
+            <div class="definition">
+                <p>highest; greatest; too (much); very; extremely</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">天气</div>
+                <span class="pronunciation">tian1 qi4</span>
+            </div>
+            <div class="definition">
+                <p>weather</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">听</div>
+                <span class="pronunciation">ting1</span>
+            </div>
+            <div class="definition">
+                <p>to listen; to hear; to obey; a can (loanword from English &quot;tin&quot;); classifier for canned beverages</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">同学</div>
+                <span class="pronunciation">tong2 xue2</span>
+            </div>
+            <div class="definition">
+                <p>(fellow) classmate; CL:位[wei4],個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">喂</div>
+                <span class="pronunciation">wei4</span>
+            </div>
+            <div class="definition">
+                <p>hello (interj., esp. on telephone); hey; to feed (sb or some animal)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">我</div>
+                <span class="pronunciation">wo3</span>
+            </div>
+            <div class="definition">
+                <p>I; me; my</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">我们</div>
+                <span class="pronunciation">wo3 men5</span>
+            </div>
+            <div class="definition">
+                <p>we; us; ourselves; our</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">五</div>
+                <span class="pronunciation">wu3</span>
+            </div>
+            <div class="definition">
+                <p>five; 5</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">喜欢</div>
+                <span class="pronunciation">xi3 huan5</span>
+            </div>
+            <div class="definition">
+                <p>to like; to be fond of</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">下</div>
+                <span class="pronunciation">xia4</span>
+            </div>
+            <div class="definition">
+                <p>down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">下午</div>
+                <span class="pronunciation">xia4 wu3</span>
+            </div>
+            <div class="definition">
+                <p>afternoon; p.m.; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">下雨</div>
+                <span class="pronunciation">xia4 yu3</span>
+            </div>
+            <div class="definition">
+                <p>to rain; rainy</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">先生</div>
+                <span class="pronunciation">xian1 sheng5</span>
+            </div>
+            <div class="definition">
+                <p>teacher; Mister (Mr.); husband; doctor (topolect); CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">现在</div>
+                <span class="pronunciation">xian4 zai4</span>
+            </div>
+            <div class="definition">
+                <p>now; at present; at the moment; modern; current; nowadays</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">想</div>
+                <span class="pronunciation">xiang3</span>
+            </div>
+            <div class="definition">
+                <p>to think; to believe; to suppose; to wish; to want; to miss</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">小</div>
+                <span class="pronunciation">xiao3</span>
+            </div>
+            <div class="definition">
+                <p>small; tiny; few; young</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">小姐</div>
+                <span class="pronunciation">xiao3 jie5</span>
+            </div>
+            <div class="definition">
+                <p>young lady; miss; CL:個|个[ge4],位[wei4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">些</div>
+                <span class="pronunciation">xie1</span>
+            </div>
+            <div class="definition">
+                <p>some; few; several; (a measure word)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">写</div>
+                <span class="pronunciation">xie3</span>
+            </div>
+            <div class="definition">
+                <p>to write</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">谢谢</div>
+                <span class="pronunciation">xie4 xie5</span>
+            </div>
+            <div class="definition">
+                <p>to thank; thanks</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">星期</div>
+                <span class="pronunciation">xing1 qi1</span>
+            </div>
+            <div class="definition">
+                <p>week; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">学生</div>
+                <span class="pronunciation">xue2 sheng5</span>
+            </div>
+            <div class="definition">
+                <p>student; school child</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">学习</div>
+                <span class="pronunciation">xue2 xi2</span>
+            </div>
+            <div class="definition">
+                <p>to learn; to study</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">学校</div>
+                <span class="pronunciation">xue2 xiao4</span>
+            </div>
+            <div class="definition">
+                <p>school; CL:所[suo3]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">一</div>
+                <span class="pronunciation">yi1</span>
+            </div>
+            <div class="definition">
+                <p>one; 1; single; a (article); as soon as; entire; whole; all; throughout; &quot;one&quot; radical in Chinese characters (Kangxi radical 1)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">衣服</div>
+                <span class="pronunciation">yi1 fu5</span>
+            </div>
+            <div class="definition">
+                <p>clothes; CL:件[jian4],套[tao4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">医生</div>
+                <span class="pronunciation">yi1 sheng1</span>
+            </div>
+            <div class="definition">
+                <p>doctor; CL:個|个[ge4],位[wei4],名[ming2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">医院</div>
+                <span class="pronunciation">yi1 yuan4</span>
+            </div>
+            <div class="definition">
+                <p>hospital; CL:所[suo3],家[jia1],座[zuo4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">椅子</div>
+                <span class="pronunciation">yi3 zi5</span>
+            </div>
+            <div class="definition">
+                <p>chair; CL:把[ba3],套[tao4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">有</div>
+                <span class="pronunciation">you3</span>
+            </div>
+            <div class="definition">
+                <p>to have; there is; there are; to exist; to be</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">月</div>
+                <span class="pronunciation">yue4</span>
+            </div>
+            <div class="definition">
+                <p>moon; month; CL:個|个[ge4],輪|轮[lun2]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">在</div>
+                <span class="pronunciation">zai4</span>
+            </div>
+            <div class="definition">
+                <p>(located) at; (to be) in; to exist; in the middle of doing sth; (indicating an action in progress)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">再见</div>
+                <span class="pronunciation">zai4 jian4</span>
+            </div>
+            <div class="definition">
+                <p>goodbye; see you again later</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">怎么</div>
+                <span class="pronunciation">zen3 me5</span>
+            </div>
+            <div class="definition">
+                <p>how?; what?; why?</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-3">怎么样</div>
+                <span class="pronunciation">zen3 me5 yang4</span>
+            </div>
+            <div class="definition">
+                <p>how?; how about?; how was it?; how are things?</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">这</div>
+                <span class="pronunciation">zhe4</span>
+            </div>
+            <div class="definition">
+                <p>this; these; (commonly pr. zhei4 before a classifier, esp. in Beijing)</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">这儿</div>
+                <span class="pronunciation">zhe4 r5</span>
+            </div>
+            <div class="definition">
+                <p>here</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">中国</div>
+                <span class="pronunciation">Zhong1 guo2</span>
+            </div>
+            <div class="definition">
+                <p>China; Middle Kingdom</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">中午</div>
+                <span class="pronunciation">zhong1 wu3</span>
+            </div>
+            <div class="definition">
+                <p>noon; midday; CL:個|个[ge4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">住</div>
+                <span class="pronunciation">zhu4</span>
+            </div>
+            <div class="definition">
+                <p>to live; to dwell; to stay; to reside; to stop</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">桌子</div>
+                <span class="pronunciation">zhuo1 zi5</span>
+            </div>
+            <div class="definition">
+                <p>table; desk; CL:張|张[zhang1],套[tao4]</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">字</div>
+                <span class="pronunciation">zi4</span>
+            </div>
+            <div class="definition">
+                <p>letter; symbol; character; word; CL:個|个[ge4]; courtesy or style name traditionally given to males aged 20 in dynastic China</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-2">昨天</div>
+                <span class="pronunciation">zuo2 tian1</span>
+            </div>
+            <div class="definition">
+                <p>yesterday</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">做</div>
+                <span class="pronunciation">zuo4</span>
+            </div>
+            <div class="definition">
+                <p>to do; to make; to produce; to write; to compose; to act as; to engage in; to hold (a party); to be; to become; to function (in some capacity); to serve as; to be used for; to form (a bond or relationship); to pretend; to feign; to act a part; to put on appearance</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns" data-closable>
+        <div class="card" data-equalizer-watch>
+            <button class="close-button" data-close>&times;</button>
+            <div class="character align-center align-middle">
+                <div class="cc-1">坐</div>
+                <span class="pronunciation">zuo4</span>
+            </div>
+            <div class="definition">
+                <p>to sit; to take a seat; to take (a bus, airplane etc); to bear fruit; surname Zuo</p>
+            </div>
+            <div class="action">
+                <a href='#'>Where this leads</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="columns small-12 topspace">
+  <div class="row footer-menu-bar">
+    <div class="medium-6 columns">
+      <ul class="menu">
+        <li>
+          <a href="#">Legal</a>
+        </li>
+        <li>
+          <a href="#">Partner</a>
+        </li>
+        <li>
+          <a href="#">Explore</a>
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 columns">
+      <ul class="menu align-right">
+        <li class="menu-text">Copyright © 2016 Smedia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row menu-panel">
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Solar Systems</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Contact</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">
+          <i class="fi-social-twitter"></i>Twitter</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-facebook"></i>Facebook</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-instagram"></i>Instagram</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-pinterest"></i>Pinterest</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row last-word">
+    <div class="large-12 columns text-center">
+      <p>Le Grande Building, Latin Quarter, Paris • 261 Rue Saint-Séverin, 75005 Paris, France</p>
+      <p>Phone 01 42 517 85 • info@test.com • www.github.com/smerth/foundation-6-sandbox.com</p>
+    </div>
+  </div>
+</footer>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/app.js"></script>
+   
+    <!-- This quick fix for adding js on a per page basis would require taking js/page/* out of the js processing in the gulp file -->
+    <!-- 
+<script src="../assets/js/panini-hsk-level-1/page.js"></script>
+ -->
+</body>
+
+</html>

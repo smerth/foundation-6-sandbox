@@ -1,0 +1,492 @@
+<!-- This is the base layout for your project, and will be used on every page. -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Offcanvas Menu -->
+                <ul class="vertical menu"
+                    data-accordion-menu=""
+                    id="main-menu">
+                  <li>
+                    <a class="menu-text"
+                       href="../index.html">Home</a>
+                  </li>
+                  <li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../cards/cards-material-design.html">Cards - Material Design</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-products.html">Cards - Products</a>
+                        </li>
+                        <li>
+                          <a href="../cards/cards-characters.html">Cards - Chinese Characters</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../data.html">Data</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../data/data-101.html">Panini - Front Matter</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-102.html">Panini - JSON file</a>
+                        </li>
+                        <li>
+                          <a href="../data/panini-hsk-level-1.html">Panini - JSON file (HSK)</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-103.html">JSON - Github AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-104.html">JSON - Drupal AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-105.html">Handlebars - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-106.html">Handlebars - Github JSON &amp; AJAX</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-107.html">Handlebars - Github JSON &amp; jQuery</a>
+                        </li>
+                        <li>
+                          <a href="../data/data-github-key-value-pairs.html">Github Key Value Pairs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../equal.html">Equalizer</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../equalizer/equalizer.html">Equalizer</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../flip.html">Flip Cards</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../flip-cards/jquery-flip-simple.html">jQuery Flip - Simple</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/jquery-flip-chinese-cards.html">jQuery Flip Chinese Cards</a>
+                        </li>
+                        <li>
+                          <a href="../flip-cards/flippant-basic.html">Flippant - Basic</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../grid.html">Grid</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../grid/grid-basic.html">Basic Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-block.html">Block Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-nested.html">Nested Grid</a>
+                        </li>
+                        <li>
+                          <a href="../grid/grid-source-order.html">Source Order</a>
+                        </li>
+                        <!--<li><a href="../grid/grid-tutorial-page.html">Demo Page</a></li>-->
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../extras.html">Isotope</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../isotope/isotope-layout.html">Isotope Layout</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-margin.html">Isotope Layout Margin</a>
+                        </li>
+                        <li>
+                          <a href="../isotope/isotope-layout-responsive.html">Isotope Layout Responsive</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../layouts.html">Layouts</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../layout-demos/topbar.html">Topbar</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/topbar-responsive.html">Topbar Responsive</a>
+                        </li>
+                        <li>
+                          <a href="../layout-demos/os-l-r-menu.html">Offscreen L &amp; R Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../images.html">Media</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../media/interchange.html">Interchange Image Swapping</a>
+                        </li>
+                        <li>
+                          <a href="../media/magnific.html">Magnific Lightbox</a>
+                        </li>
+                        <li>
+                          <a href="../media/orbit.html">Orbit Image Carousel</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-gallery.html">Photoswipe Gallery</a>
+                        </li>
+                        <li>
+                          <a href="../media/photoswipe-link.html">Photoswipe Link</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../Visibility.html">Modals, Popups &amp; Tooltips</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../visibility/drop.html">Drop</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/tooltip.html">Tooltip</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/reveal.html">Reveal - Modal</a>
+                        </li>
+                        <li>
+                          <a href="../visibility/visibility.html">Visibility</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../panini.html">Panini</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../panini/panini-layouts-partials.html">Layouts &amp; Partials</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-page-variables.html">Page Variables</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-markdown.html">Markdown Filter</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-helpers.html">Panini Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-custom-helpers.html">Custom Helpers</a>
+                        </li>
+                        <li>
+                          <a href="../panini/panini-handlebars-helpers.html">Handlebars Helpers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../templates.html">Templates</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../templates/agency.html">Agency</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog-simple.html">Blog Simple</a>
+                        </li>
+                        <li>
+                          <a href="../templates/blog.html">Blog</a>
+                        </li>
+                        <li>
+                          <a href="../templates/ecommerce.html">eCommerce</a>
+                        </li>
+                        <li>
+                          <a href="../templates/news-magazine.html">News Magazine</a>
+                        </li>
+                        <li>
+                          <a href="../templates/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="../templates/product-page.html">Product Page</a>
+                        </li>
+                        <li>
+                          <a href="../templates/real-estate.html">Real Estate</a>
+                        </li>
+                        <li>
+                          <a href="../templates/hotel-landing-page.html">Hotel Landing Page</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../toggler.html">Toggler</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../toggler/toggler-demo.html">Toggler</a>
+                        </li>
+                        <li>
+                          <a href="../toggler/toggler-character-cards.html">Toggler - Character Cards</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../components.html">Typography</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../typography/typography.html">Typography</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Foundation Icons</a>
+                        </li>
+                        <li>
+                          <a href="../typography/typography.html">Other Icons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-nested"
+                         href="../cards.html">Forms</a>
+                      <ul class="nested vertical menu">
+                        <li>
+                          <a href="../info/contact.html">Contact Form</a>
+                        </li>
+                        <li>
+                          <a href="../info/login.html">Login Form</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Page content -->
+                <!-- Shows Off-screen menu hamburger and top-bar on small screens -->
+                <div id="top-bar" class="top-bar show-for-small-only">
+                    <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                        </li>
+                        <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                        <!--<li class="has-submenu">
+                            <a href="#">Dropdown item</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Dropdown One</a></li>
+                                <li><a href="#">Dropdown Two</a></li>
+                                <li><a href="#">Dropdown Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item Two</a></li>-->
+                        <li><a href="../info/contact.html">Contact</a></li>
+                        <li><a href="../info/login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="top-bar show-for-medium">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <button type="button" class="menu-icon show-for-medium-only" data-toggle="offCanvas"></button>
+                            </li>
+                            <li><a class="menu-text" href="../index.html">Foundation 6 Sandbox</a></li>
+                            <!--<li class="has-submenu">
+                                <a href="#">Dropdown item</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    <li><a href="#">Dropdown One</a></li>
+                                    <li><a href="#">Dropdown Two</a></li>
+                                    <li><a href="#">Dropdown Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item Two</a></li>-->
+                            <li><a href="../info/contact.html">Contact</a></li>
+                            <li><a href="../info/login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created by panini. -->
+    <div class="info-panel columns large-12">
+        <div class="row callout">
+            <div class="large-12  columns">
+                <h3>  </h3>
+                <h5>Corresponding Filename: <span class="subheader">panini-custom-helpers</span></h5>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+	<div class="columns small-12">
+
+<h1 id="panini-custom-helpers">Panini - Custom Helpers</h1>
+<p>If you don&#39;t see the right helper, you can write your own. Add a javascript file to <code>&#39;src/helpers&#39;</code>, add helpers: <code>&#39;src/helpers&#39;</code> to the Panini process in your <code>gulpfile.babel.js</code>, restart npm, then call it in your templates.</p>
+<pre><code class="lang-javascript">// Example file src/helpers/bold.js
+module.exports = function(options) {
+  // options.fn(this) = Handelbars content between 
+  var bolder = &#39;&lt;strong&gt;&#39; + options.fn(this) + &#39;&lt;/strong&gt;&#39;;
+  return bolder;
+}
+</code></pre>
+<pre><code class="lang-javascript">// Example  gulpfile.babel.js
+function pages() {
+  return gulp.src(&#39;src/pages/**/*.html&#39;)
+    .pipe(panini({
+      root: &#39;src/pages&#39;,
+      layouts: &#39;src/layouts&#39;,
+      partials: &#39;src/partials&#39;,
+      helpers: &#39;src/helpers&#39;
+    }))
+    .pipe(inky())
+    .pipe(gulp.dest(&#39;dist&#39;));
+}
+</code></pre>
+<p>Then in your projects call your custom {{#bold}} helper</p>
+<pre><code class="lang-html">{{#bold}}ideas{{/bold}}
+</code></pre>
+		
+	</div>
+</div>
+
+
+<footer class="columns small-12 topspace">
+  <div class="row footer-menu-bar">
+    <div class="medium-6 columns">
+      <ul class="menu">
+        <li>
+          <a href="#">Legal</a>
+        </li>
+        <li>
+          <a href="#">Partner</a>
+        </li>
+        <li>
+          <a href="#">Explore</a>
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 columns">
+      <ul class="menu align-right">
+        <li class="menu-text">Copyright © 2016 Smedia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row menu-panel">
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Solar Systems</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Contact</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">
+          <i class="fi-social-twitter"></i>Twitter</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-facebook"></i>Facebook</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-instagram"></i>Instagram</a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fi-social-pinterest"></i>Pinterest</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-6 large-3 columns">
+      <p class="lead">Offices</p>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row last-word">
+    <div class="large-12 columns text-center">
+      <p>Le Grande Building, Latin Quarter, Paris • 261 Rue Saint-Séverin, 75005 Paris, France</p>
+      <p>Phone 01 42 517 85 • info@test.com • www.github.com/smerth/foundation-6-sandbox.com</p>
+    </div>
+  </div>
+</footer>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/app.js"></script>
+   
+    <!-- This quick fix for adding js on a per page basis would require taking js/page/* out of the js processing in the gulp file -->
+    <!-- 
+<script src="../assets/js/panini-custom-helpers/page.js"></script>
+ -->
+</body>
+
+</html>
