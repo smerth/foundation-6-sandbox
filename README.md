@@ -1,13 +1,18 @@
+# Foundation 6.0 Sandbox
+
+Overview
+
+![App Screenshot](https://raw.githubusercontent.com/smerth/foundation-6-sandbox/master/screenshot.png)
+
 ## Debugging on localhost and gh-pages at the same time
 
-During setup its necessary to geet a build that runs on both localhost and gh-pages.  Once both are working you can develop on localhost and deploy to gh-pages only when your ready to push a major change live.
+During setup its necessary to geet a build that runs on both localhost and gh-pages. Once both are working you can develop on localhost and deploy to gh-pages only when your ready to push a major change live.
 
 But for cycling through the build, git, gulp-deploy you run these commands back to back.
 
 ```bash
 git add . && git commit -m "debugging gh-pages issues" && git push && npm run deploy && npm start
 ```
-
 
 # ZURB Template
 
