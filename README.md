@@ -8,7 +8,7 @@ Overview
 
 During setup its necessary to geet a build that runs on both localhost and gh-pages. Once both are working you can develop on localhost and deploy to gh-pages only when your ready to push a major change live.
 
-But for cycling through the build, git, gulp-deploy you run these commands back to back.
+But for cycling through the build, git, gulp-deploy you run these commands back to back...
 
 ```bash
 git add . && git commit -m "debugging gh-pages issues" && git push && npm run deploy && npm start
